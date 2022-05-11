@@ -18,15 +18,15 @@ for year in range(2003, 2023):
         }
         # HTML and CSV file names and paths
         url = f"https://basketball.realgm.com/ncaa/team-stats/{year}/Totals/Team_Totals/{url_dict[season]}"
-        html_name = f"{year}{season}.html"
+        html_name = f"{year}-{season}-stats.html"
         html_file_path = f"stats/{html_name}"
-        csv_name = f"{year}{season}.csv"
+        csv_name = f"{year}-{season}-stats.csv"
         csv_file_path = f"stats/{csv_name}"
 
 
 
         # only request if the file doesn't exist locally to prevent flooding the site
-        if not os.exists(html_file_path):
+        if not os.path.exists(html_file_path):
             with open(html_file_path, "w") as f:
                 response = requests.get(url)
                 f.write(response.text)
