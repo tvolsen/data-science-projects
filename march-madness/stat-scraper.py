@@ -41,7 +41,7 @@ for year in range(2003, 2023):
         with open(csv_file_path, "w") as f:
             write = csv.writer(f)
             # here are the column headers
-            categories = ["year", "school", "pts", "fgm", "fga", "3pm", "3pa", "ftm", "fta", "orb", "drb", "reb", "ast", "stl", "blk", "tov", "pf"]
+            categories = ["year", "team", "pts", "fgm", "fga", "3pm", "3pa", "ftm", "fta", "orb", "drb", "reb", "ast", "stl", "blk", "tov", "pf"]
             write.writerow(categories)
             while all_stats:
                 team = []
