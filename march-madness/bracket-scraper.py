@@ -3,16 +3,38 @@ import requests
 import os
 import csv
 
-for year in range(2022, 2023):
+# each bracket url has a different number at the end, since there is such a small number of brackets, I found manually copying them was the easiest option
+url_year = {
+    2003 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2003/312",
+    2004 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2004/311",
+    2005 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2005/310",
+    2006 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2006/309",
+    2007 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2007/230",
+    2008 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2008/229",
+    2009 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2009/227",
+    2010 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2010/226",
+    2011 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2011/433", 
+    2012 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2012/489", 
+    2013 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2013/546",
+    2014 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2014/610",
+    2015 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2015/677",
+    2016 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2016/708",
+    2017 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2017/803",
+    2018 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2018/872",
+    2019 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2019/936",
+    2022 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2022/1128"
+}
+
+for year in range(2003, 2023):
     # skip the two years most heavily impacted by COVID-19 for stat reliability
     if year == 2020 or year == 2021:
         continue
 
     # HTML and CSV file names and paths
-    url = f"https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/Bracket/{year}/"
-    html_name = f"{year}-stats.html"
+    url = url_year[year]
+    html_name = f"{year}-brackets.html"
     html_file_path = f"brackets/{html_name}"
-    csv_name = f"{year}-stats.csv"
+    csv_name = f"{year}-brackets.csv"
     csv_file_path = f"brackets/{csv_name}"
 
     # only request if the file doesn't exist locally to prevent flooding the site
@@ -39,27 +61,13 @@ for year in range(2022, 2023):
             results.append([year, team0_name, team1_name])
         else:
             results.append([year, team1_name, team0_name])
-    print(results)
 
-
-    # # save all of the information to a csv file
-    # with open(csv_file_path, "w") as f:
-    #     write = csv.writer(f)
-    #     # here are the column headers
-    #     categories = ["year", "school", "pts", "fgm", "fga", "3pm", "3pa", "ftm", "fta", "orb", "drb", "reb", "ast", "stl", "blk", "tov", "pf"]
-    #     write.writerow(categories)
-    #     while all_stats:
-    #         team = []
-    #         # add the year and school columns
-    #         team.append(year)
-    #         team.append(all_stats.pop(0).text)
-    #         for i in range(20):
-    #             # ignore a few irrelevant or incompatible columns
-    #             if i in [0, 1, 5, 8, 11]:
-    #                 all_stats.pop(0)
-    #             else:
-    #                 # format the numbers as integers
-    #                 s = str(all_stats.pop(0).text)
-    #                 s = s.replace(",", "")
-    #                 team.append(int(s))
-    #         write.writerow(team)
+    # save all of the information to a csv file
+    with open(csv_file_path, "w") as f:
+        write = csv.writer(f)
+        # here are the column headers
+        categories = ["year", "winner", "loser"]
+        write.writerow(categories)
+        while results:
+            result = results.pop(0)
+            write.writerow(result)
