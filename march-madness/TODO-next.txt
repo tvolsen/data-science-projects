@@ -1,0 +1,2 @@
+-subtract tournament totals from season totals in stat-merger
+-append records to stats df
