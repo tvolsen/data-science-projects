@@ -1,2 +1,3 @@
--average stats per game
--average w/l and conference w/l
+-integrate game records
+
+-start data analysis and model building. how will the training and testing data be broken up? (1 year test, several years test, etc.)

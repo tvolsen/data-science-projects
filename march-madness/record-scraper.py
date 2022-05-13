@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-from nbformat import read
 import requests
 import os
 import csv
