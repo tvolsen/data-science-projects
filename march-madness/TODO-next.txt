@@ -1,3 +1,3 @@
--integrate game records
+-clean up last major block of code in data-prep.ipynb (it works as expected now, but can be translated to series, which makes more sense and will run quicker)
 
 -start data analysis and model building. how will the training and testing data be broken up? (1 year test, several years test, etc.)
