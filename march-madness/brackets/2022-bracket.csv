@@ -1,68 +1,69 @@
-year,winner,loser
-2022,Texas Southern,Texas A&M-CC
-2022,Indiana,Wyoming
-2022,Wright State,Bryant
-2022,Notre Dame,Rutgers
-2022,Gonzaga,Georgia State
-2022,Memphis,Boise State
-2022,New Mexico State,Connecticut
-2022,Arkansas,Vermont
-2022,Notre Dame,Alabama
-2022,Texas Tech,Montana State
-2022,Michigan State,Davidson
-2022,Duke,Cal State Fullerton
-2022,Gonzaga,Memphis
-2022,Arkansas,New Mexico State
-2022,Texas Tech,Notre Dame
-2022,Duke,Michigan State
-2022,Arkansas,Gonzaga
-2022,Duke,Texas Tech
-2022,Duke,Arkansas
-2022,Baylor,Norfolk State
-2022,North Carolina,Marquette
-2022,Saint Mary's,Indiana
-2022,UCLA,Akron
-2022,Texas,Virginia Tech
-2022,Purdue,Yale
-2022,Murray State,San Francisco
-2022,Saint Peter's,Kentucky
-2022,North Carolina,Baylor
-2022,UCLA,Saint Mary's
-2022,Purdue,Texas
-2022,Saint Peter's,Murray State
-2022,North Carolina,UCLA
-2022,Saint Peter's,Purdue
-2022,North Carolina,Saint Peter's
-2022,Arizona,Wright State
-2022,Texas Christian,Seton Hall
-2022,Houston,UAB
-2022,Illinois,Chattanooga
-2022,Michigan,Colorado State
-2022,Tennessee,Longwood
-2022,Ohio State,Loyola (IL)
-2022,Villanova,Delaware
-2022,Arizona,Texas Christian
-2022,Houston,Illinois
-2022,Michigan,Tennessee
-2022,Villanova,Ohio State
-2022,Houston,Arizona
-2022,Villanova,Michigan
-2022,Villanova,Houston
-2022,Kansas,Texas Southern
-2022,Creighton,San Diego State
-2022,Richmond,Iowa
-2022,Providence,South Dakota State
-2022,Iowa State,LSU
-2022,Wisconsin,Colgate
-2022,Miami (FL),USC
-2022,Auburn,Jacksonville State
-2022,Kansas,Creighton
-2022,Providence,Richmond
-2022,Iowa State,Wisconsin
-2022,Miami (FL),Auburn
-2022,Kansas,Providence
-2022,Miami (FL),Iowa State
-2022,Kansas,Miami (FL)
-2022,North Carolina,Duke
-2022,Kansas,Villanova
-2022,Kansas,North Carolina
+year,winner,loser,region,round
+2022,Texas Southern,Texas A&M-CC,none,0
+2022,Indiana,Wyoming,none,0
+2022,Wright State,Bryant,none,0
+2022,Notre Dame,Rutgers,none,0
+2022,Gonzaga,Georgia State,West Regional,1
+2022,Memphis,Boise State,West Regional,1
+2022,New Mexico State,Connecticut,West Regional,1
+2022,Arkansas,Vermont,West Regional,1
+2022,Notre Dame,Alabama,West Regional,1
+2022,Texas Tech,Montana State,West Regional,1
+2022,Michigan State,Davidson,West Regional,1
+2022,Duke,Cal State Fullerton,West Regional,1
+2022,Gonzaga,Memphis,West Regional,2
+2022,Arkansas,New Mexico State,West Regional,2
+2022,Texas Tech,Notre Dame,West Regional,2
+2022,Duke,Michigan State,West Regional,2
+2022,Arkansas,Gonzaga,West Regional,3
+2022,Duke,Texas Tech,West Regional,3
+2022,Duke,Arkansas,West Regional,4
+2022,Baylor,Norfolk State,East Regional,1
+2022,North Carolina,Marquette,East Regional,1
+2022,Saint Mary's,Indiana,East Regional,1
+2022,UCLA,Akron,East Regional,1
+2022,Texas,Virginia Tech,East Regional,1
+2022,Purdue,Yale,East Regional,1
+2022,Murray State,San Francisco,East Regional,1
+2022,Saint Peter's,Kentucky,East Regional,1
+2022,North Carolina,Baylor,East Regional,2
+2022,UCLA,Saint Mary's,East Regional,2
+2022,Purdue,Texas,East Regional,2
+2022,Saint Peter's,Murray State,East Regional,2
+2022,North Carolina,UCLA,East Regional,3
+2022,Saint Peter's,Purdue,East Regional,3
+2022,North Carolina,Saint Peter's,East Regional,4
+2022,Arizona,Wright State,South Regional,1
+2022,Texas Christian,Seton Hall,South Regional,1
+2022,Houston,UAB,South Regional,1
+2022,Illinois,Chattanooga,South Regional,1
+2022,Michigan,Colorado State,South Regional,1
+2022,Tennessee,Longwood,South Regional,1
+2022,Ohio State,Loyola (IL),South Regional,1
+2022,Villanova,Delaware,South Regional,1
+2022,Arizona,Texas Christian,South Regional,2
+2022,Houston,Illinois,South Regional,2
+2022,Michigan,Tennessee,South Regional,2
+2022,Villanova,Ohio State,South Regional,2
+2022,Houston,Arizona,South Regional,3
+2022,Villanova,Michigan,South Regional,3
+2022,Villanova,Houston,South Regional,4
+2022,Kansas,Texas Southern,Midwest Regional,1
+2022,Creighton,San Diego State,Midwest Regional,1
+2022,Richmond,Iowa,Midwest Regional,1
+2022,Providence,South Dakota State,Midwest Regional,1
+2022,Iowa State,LSU,Midwest Regional,1
+2022,Wisconsin,Colgate,Midwest Regional,1
+2022,Miami (FL),USC,Midwest Regional,1
+2022,Auburn,Jacksonville State,Midwest Regional,1
+2022,Kansas,Creighton,Midwest Regional,2
+2022,Providence,Richmond,Midwest Regional,2
+2022,Iowa State,Wisconsin,Midwest Regional,2
+2022,Miami (FL),Auburn,Midwest Regional,2
+2022,Kansas,Providence,Midwest Regional,3
+2022,Miami,Iowa State,Midwest Regional,3
+2022,Kansas,Miami (FL),Midwest Regional,4
+2022,North Carolina,Duke,none,5
+2022,Kansas,Villanova,none,5
+2022,Kansas,North Carolina,none,6
+West Regional,East Regional,Midwest Regional,South Regional

@@ -1,68 +1,69 @@
-year,winner,loser
-2016,Wichita State,Vanderbilt
-2016,Florida Gulf Coast,Fairleigh Dickinson
-2016,Michigan,Tulsa
-2016,Holy Cross,Southern
-2016,Virginia,Hampton
-2016,Butler,Texas Tech
-2016,Little Rock,Purdue
-2016,Iowa State,Iona
-2016,Gonzaga,Seton Hall
-2016,Utah,Fresno State
-2016,Syracuse,Dayton
-2016,Middle Tennessee State,Michigan State
-2016,Virginia,Butler
-2016,Iowa State,Little Rock
-2016,Gonzaga,Utah
-2016,Syracuse,Middle Tennessee State
-2016,Virginia,Iowa State
-2016,Syracuse,Gonzaga
-2016,Syracuse,Virginia
-2016,Oregon,Holy Cross
-2016,Saint Joseph's,Cincinnati
-2016,Yale,Baylor
-2016,Duke,UNC Wilmington
-2016,Northern Iowa,Texas
-2016,Texas A&M,Green Bay
-2016,VCU,Oregon State
-2016,Oklahoma,Cal State Bakersfield
-2016,Oregon,Saint Joseph's
-2016,Duke,Yale
-2016,Texas A&M,Northern Iowa
-2016,Oklahoma,VCU
-2016,Oregon,Duke
-2016,Oklahoma,Texas A&M
-2016,Oklahoma,Oregon
-2016,North Carolina,Florida Gulf Coast
-2016,Providence,USC
-2016,Indiana,Chattanooga
-2016,Kentucky,Stony Brook
-2016,Notre Dame,Michigan
-2016,Stephen F. Austin,West Virginia
-2016,Wisconsin,Pittsburgh
-2016,Xavier,Weber State
-2016,North Carolina,Providence
-2016,Indiana,Kentucky
-2016,Notre Dame,Stephen F. Austin
-2016,Wisconsin,Xavier
-2016,North Carolina,Indiana
-2016,Notre Dame,Wisconsin
-2016,North Carolina,Notre Dame
-2016,Kansas,Austin Peay
-2016,Connecticut,Colorado
-2016,Maryland,South Dakota State
-2016,Hawaii,California
-2016,Wichita State,Arizona
-2016,Miami (FL),Buffalo
-2016,Iowa,Temple
-2016,Villanova,UNC Asheville
-2016,Kansas,Connecticut
-2016,Maryland,Hawaii
-2016,Miami (FL),Wichita State
-2016,Villanova,Iowa
-2016,Kansas,Maryland
-2016,Villanova,Miami (FL)
-2016,Villanova,Kansas
-2016,Villanova,Oklahoma
-2016,North Carolina,Syracuse
-2016,Villanova,North Carolina
+year,winner,loser,region,round
+2016,Wichita State,Vanderbilt,none,0
+2016,Florida Gulf Coast,Fairleigh Dickinson,none,0
+2016,Michigan,Tulsa,none,0
+2016,Holy Cross,Southern,none,0
+2016,Virginia,Hampton,Midwest Regional,1
+2016,Butler,Texas Tech,Midwest Regional,1
+2016,Little Rock,Purdue,Midwest Regional,1
+2016,Iowa State,Iona,Midwest Regional,1
+2016,Gonzaga,Seton Hall,Midwest Regional,1
+2016,Utah,Fresno State,Midwest Regional,1
+2016,Syracuse,Dayton,Midwest Regional,1
+2016,Middle Tennessee State,Michigan State,Midwest Regional,1
+2016,Virginia,Butler,Midwest Regional,2
+2016,Iowa State,Little Rock,Midwest Regional,2
+2016,Gonzaga,Utah,Midwest Regional,2
+2016,Syracuse,Middle Tennessee State,Midwest Regional,2
+2016,Virginia,Iowa State,Midwest Regional,3
+2016,Syracuse,Gonzaga,Midwest Regional,3
+2016,Syracuse,Virginia,Midwest Regional,4
+2016,Oregon,Holy Cross,West Regional,1
+2016,Saint Joseph's,Cincinnati,West Regional,1
+2016,Yale,Baylor,West Regional,1
+2016,Duke,UNC Wilmington,West Regional,1
+2016,Northern Iowa,Texas,West Regional,1
+2016,Texas A&M,Green Bay,West Regional,1
+2016,VCU,Oregon State,West Regional,1
+2016,Oklahoma,Cal State Bakersfield,West Regional,1
+2016,Oregon,Saint Joseph's,West Regional,2
+2016,Duke,Yale,West Regional,2
+2016,Texas A&M,Northern Iowa,West Regional,2
+2016,Oklahoma,VCU,West Regional,2
+2016,Oregon,Duke,West Regional,3
+2016,Oklahoma,Texas A&M,West Regional,3
+2016,Oklahoma,Oregon,West Regional,4
+2016,North Carolina,Florida Gulf Coast,East Regional,1
+2016,Providence,USC,East Regional,1
+2016,Indiana,Chattanooga,East Regional,1
+2016,Kentucky,Stony Brook,East Regional,1
+2016,Notre Dame,Michigan,East Regional,1
+2016,Stephen F. Austin,West Virginia,East Regional,1
+2016,Wisconsin,Pittsburgh,East Regional,1
+2016,Xavier,Weber State,East Regional,1
+2016,North Carolina,Providence,East Regional,2
+2016,Indiana,Kentucky,East Regional,2
+2016,Notre Dame,Stephen F. Austin,East Regional,2
+2016,Wisconsin,Xavier,East Regional,2
+2016,North Carolina,Indiana,East Regional,3
+2016,Notre Dame,Wisconsin,East Regional,3
+2016,North Carolina,Notre Dame,East Regional,4
+2016,Kansas,Austin Peay,South Regional,1
+2016,Connecticut,Colorado,South Regional,1
+2016,Maryland,South Dakota State,South Regional,1
+2016,Hawaii,California,South Regional,1
+2016,Wichita State,Arizona,South Regional,1
+2016,Miami,Buffalo,South Regional,1
+2016,Iowa,Temple,South Regional,1
+2016,Villanova,UNC Asheville,South Regional,1
+2016,Kansas,Connecticut,South Regional,2
+2016,Maryland,Hawaii,South Regional,2
+2016,Miami,Wichita State,South Regional,2
+2016,Villanova,Iowa,South Regional,2
+2016,Kansas,Maryland,South Regional,3
+2016,Villanova,Miami (FL),South Regional,3
+2016,Villanova,Kansas,South Regional,4
+2016,Villanova,Oklahoma,none,5
+2016,North Carolina,Syracuse,none,5
+2016,Villanova,North Carolina,none,6
+West Regional,South Regional,East Regional,Midwest Regional
