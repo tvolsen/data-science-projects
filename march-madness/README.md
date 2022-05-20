@@ -18,7 +18,7 @@ File run order:
 
     3. record-scraper.py
 
-    4. stat-prep.ipynb
+    4. data-prep.ipynb
 
 
     
