@@ -46,28 +46,66 @@ for year in range(2003, 2023):
     with open(html_file_path) as f:
         soup = BeautifulSoup(f, "html.parser")
 
-    # find all of the relevant information from the HTML source
-    all_games = soup.find_all(class_="bracket_game")
-    all_games = [x.find_all(class_=["name", "score"]) for x in all_games]
-    all_games = [[y.text for y in x] for x in all_games]
-    results = []
-    while all_games:
-        game = all_games.pop(0)
-        team0_name = game.pop(0)
-        team0_score = int(game.pop(0))
-        team1_name = game.pop(0)
-        team1_score = int(game.pop(0))
-        if team0_score > team1_score:
-            results.append([year, team0_name, team1_name])
-        else:
-            results.append([year, team1_name, team0_name])
+    # the round number of each round name
+    rounds_dict = {
+        "First Four" : 0,
+        "Play In Game" : 0,
+        "First Round" : 1,
+        "Second Round" : 2,
+        "Sweet Sixteen" : 3,
+        "Elite Eight" : 4,
+        "Final Four" : 5,
+        "Championship Game" : 6
+    }
 
+    # a dictionary to track which region each team comes from
+    team_region = {}
+
+    # find all of the relevant information from the HTML source
+    bracket = soup.find(class_="bracket")
+    bracket = bracket.find_all(class_=["round", "name", "score"])
+    bracket = [y.text for y in bracket]
+
+    results = []
+    region_matchup = []
+
+    while bracket:
+        # remove () from older brackets
+        bracket[0] = bracket[0].split(" (")[0]
+        if bracket[0] in rounds_dict:
+            round = rounds_dict[bracket.pop(0)]
+            # there is no region for the play in games, final four or championship
+            if round in [0, 5, 6]:
+                region = "none"
+        # record the region data to build brackets in a later script
+        elif "Region" in bracket[0]:
+            region = bracket.pop(0)
+        else:
+            team0_name = bracket.pop(0)
+            team0_score = int(bracket.pop(0))
+            team1_name = bracket.pop(0)
+            team1_score = int(bracket.pop(0))
+            if team0_score > team1_score:
+                results.append([year, team0_name, team1_name, region, round])
+            else:
+                results.append([year, team1_name, team0_name, region, round])
+
+            # tracks what region each team is in
+            if team0_name not in team_region and region != "none":
+                team_region[team0_name] = region
+            if team1_name not in team_region and region != "none":
+                team_region[team1_name] = region
+            # determines which regions face eachother in the final four
+            if round == 5:
+                region_matchup.append(team_region[team0_name])
+                region_matchup.append(team_region[team1_name])
     # save all of the information to a csv file
     with open(csv_file_path, "w") as f:
         write = csv.writer(f)
         # here are the column headers
-        categories = ["year", "winner", "loser"]
+        categories = ["year", "winner", "loser", "region", "round"]
         write.writerow(categories)
         while results:
             result = results.pop(0)
             write.writerow(result)
+        write.writerow(region_matchup)

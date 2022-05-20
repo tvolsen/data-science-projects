@@ -46,60 +46,28 @@ for year in range(2003, 2023):
     with open(html_file_path) as f:
         soup = BeautifulSoup(f, "html.parser")
 
-    rounds_dict = {
-        "First Four" : 0,
-        "Play In Game" : 0,
-        "First Round" : 1,
-        "Second Round" : 2,
-        "Sweet Sixteen" : 3,
-        "Elite Eight" : 4,
-        "Final Four" : 5,
-        "Championship Game" : 6
-    }
-
-    team_region = {}
-
     # find all of the relevant information from the HTML source
-    bracket = soup.find(class_="bracket")
-    # bracket = [x.find_all(class_=["round", "name", "score"]) for x in bracket]
-    bracket = bracket.find_all(class_=["round", "name", "score"])
-    # bracket = bracket[0]
-    bracket = [y.text for y in bracket]
-
+    all_games = soup.find_all(class_="bracket_game")
+    all_games = [x.find_all(class_=["name", "score"]) for x in all_games]
+    all_games = [[y.text for y in x] for x in all_games]
     results = []
-    region_matchup = []
-
-    while bracket:
-        bracket[0] = bracket[0].split(" (")[0]
-        if bracket[0] in rounds_dict:
-            round = rounds_dict[bracket.pop(0)]
-            if round in [0, 5, 6]:
-                region = "none"
-        elif "Region" in bracket[0]:
-            region = bracket.pop(0)
+    while all_games:
+        game = all_games.pop(0)
+        team0_name = game.pop(0)
+        team0_score = int(game.pop(0))
+        team1_name = game.pop(0)
+        team1_score = int(game.pop(0))
+        if team0_score > team1_score:
+            results.append([year, team0_name, team1_name])
         else:
-            team0_name = bracket.pop(0)
-            team0_score = int(bracket.pop(0))
-            team1_name = bracket.pop(0)
-            team1_score = int(bracket.pop(0))
-            if team0_score > team1_score:
-                results.append([year, team0_name, team1_name, region, round])
-            else:
-                results.append([year, team1_name, team0_name, region, round])
-            if team0_name not in team_region and region != "none":
-                team_region[team0_name] = region
-            if team1_name not in team_region and region != "none":
-                team_region[team1_name] = region
-            if round == 5:
-                region_matchup.append(team_region[team0_name])
-                region_matchup.append(team_region[team1_name])
+            results.append([year, team1_name, team0_name])
+
     # save all of the information to a csv file
     with open(csv_file_path, "w") as f:
         write = csv.writer(f)
         # here are the column headers
-        categories = ["year", "winner", "loser", "region", "round"]
+        categories = ["year", "winner", "loser"]
         write.writerow(categories)
         while results:
             result = results.pop(0)
             write.writerow(result)
-        write.writerow(region_matchup)
