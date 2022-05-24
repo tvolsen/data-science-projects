@@ -1,69 +1,69 @@
-year,winner,loser,region,round
-2012,Brigham Young,Iona,none,0
-2012,Western Kentucky,Mississippi Valley State,none,0
-2012,Vermont,Lamar,none,0
-2012,South Florida,California,none,0
-2012,Syracuse,UNC Asheville,East Regional,1
-2012,Kansas State,Southern Mississippi,East Regional,1
-2012,Vanderbilt,Harvard,East Regional,1
-2012,Wisconsin,Montana,East Regional,1
-2012,Florida State,St. Bonaventure,East Regional,1
-2012,Cincinnati,Texas,East Regional,1
-2012,Gonzaga,West Virginia,East Regional,1
-2012,Ohio State,Loyola (MD),East Regional,1
-2012,Syracuse,Kansas State,East Regional,2
-2012,Wisconsin,Vanderbilt,East Regional,2
-2012,Cincinnati,Florida State,East Regional,2
-2012,Ohio State,Gonzaga,East Regional,2
-2012,Syracuse,Wisconsin,East Regional,3
-2012,Ohio State,Cincinnati,East Regional,3
-2012,Ohio State,Syracuse,East Regional,4
-2012,Michigan State,Long Island,West Regional,1
-2012,Saint Louis,Memphis,West Regional,1
-2012,New Mexico,Long Beach State,West Regional,1
-2012,Louisville,Davidson,West Regional,1
-2012,Marquette,Brigham Young,West Regional,1
-2012,Murray State,Colorado State,West Regional,1
-2012,Florida,Virginia,West Regional,1
-2012,Norfolk State,Missouri,West Regional,1
-2012,Michigan State,Saint Louis,West Regional,2
-2012,Louisville,New Mexico,West Regional,2
-2012,Marquette,Murray State,West Regional,2
-2012,Florida,Norfolk State,West Regional,2
-2012,Louisville,Michigan State,West Regional,3
-2012,Florida,Marquette,West Regional,3
-2012,Louisville,Florida,West Regional,4
-2012,Kentucky,Western Kentucky,South Regional,1
-2012,Iowa State,Connecticut,South Regional,1
-2012,VCU,Wichita State,South Regional,1
-2012,Indiana,New Mexico State,South Regional,1
-2012,Baylor,South Dakota State,South Regional,1
-2012,Colorado,UNLV,South Regional,1
-2012,Xavier,Notre Dame,South Regional,1
-2012,Lehigh,Duke,South Regional,1
-2012,Kentucky,Iowa State,South Regional,2
-2012,Indiana,VCU,South Regional,2
-2012,Baylor,Colorado,South Regional,2
-2012,Xavier,Lehigh,South Regional,2
-2012,Kentucky,Indiana,South Regional,3
-2012,Baylor,Xavier,South Regional,3
-2012,Kentucky,Baylor,South Regional,4
-2012,North Carolina,Vermont,Midwest Regional,1
-2012,Creighton,Alabama,Midwest Regional,1
-2012,South Florida,Temple,Midwest Regional,1
-2012,Ohio,Michigan,Midwest Regional,1
-2012,Georgetown,Belmont,Midwest Regional,1
-2012,NC State,San Diego State,Midwest Regional,1
-2012,Purdue,Saint Mary's,Midwest Regional,1
-2012,Kansas,Detroit-Mercy,Midwest Regional,1
-2012,North Carolina,Creighton,Midwest Regional,2
-2012,Ohio,South Florida,Midwest Regional,2
-2012,NC State,Georgetown,Midwest Regional,2
-2012,Kansas,Purdue,Midwest Regional,2
-2012,North Carolina,Ohio,Midwest Regional,3
-2012,Kansas,NC State,Midwest Regional,3
-2012,Kansas,North Carolina,Midwest Regional,4
-2012,Kentucky,Louisville,none,5
-2012,Kansas,Ohio State,none,5
-2012,Kentucky,Kansas,none,6
+year,team1,team2,winner,loser,region,round
+2012,Brigham Young,Iona,Brigham Young,Iona,none,0
+2012,Mississippi Valley State,Western Kentucky,Western Kentucky,Mississippi Valley State,none,0
+2012,Lamar,Vermont,Vermont,Lamar,none,0
+2012,California,South Florida,South Florida,California,none,0
+2012,Syracuse,UNC Asheville,Syracuse,UNC Asheville,East Regional,1
+2012,Kansas State,Southern Mississippi,Kansas State,Southern Mississippi,East Regional,1
+2012,Vanderbilt,Harvard,Vanderbilt,Harvard,East Regional,1
+2012,Wisconsin,Montana,Wisconsin,Montana,East Regional,1
+2012,Florida State,St. Bonaventure,Florida State,St. Bonaventure,East Regional,1
+2012,Cincinnati,Texas,Cincinnati,Texas,East Regional,1
+2012,Gonzaga,West Virginia,Gonzaga,West Virginia,East Regional,1
+2012,Ohio State,Loyola (MD),Ohio State,Loyola (MD),East Regional,1
+2012,Syracuse,Kansas State,Syracuse,Kansas State,East Regional,2
+2012,Wisconsin,Vanderbilt,Wisconsin,Vanderbilt,East Regional,2
+2012,Florida State,Cincinnati,Cincinnati,Florida State,East Regional,2
+2012,Ohio State,Gonzaga,Ohio State,Gonzaga,East Regional,2
+2012,Syracuse,Wisconsin,Syracuse,Wisconsin,East Regional,3
+2012,Ohio State,Cincinnati,Ohio State,Cincinnati,East Regional,3
+2012,Syracuse,Ohio State,Ohio State,Syracuse,East Regional,4
+2012,Michigan State,Long Island,Michigan State,Long Island,West Regional,1
+2012,Memphis,Saint Louis,Saint Louis,Memphis,West Regional,1
+2012,New Mexico,Long Beach State,New Mexico,Long Beach State,West Regional,1
+2012,Louisville,Davidson,Louisville,Davidson,West Regional,1
+2012,Marquette,Brigham Young,Marquette,Brigham Young,West Regional,1
+2012,Murray State,Colorado State,Murray State,Colorado State,West Regional,1
+2012,Florida,Virginia,Florida,Virginia,West Regional,1
+2012,Missouri,Norfolk State,Norfolk State,Missouri,West Regional,1
+2012,Michigan State,Saint Louis,Michigan State,Saint Louis,West Regional,2
+2012,Louisville,New Mexico,Louisville,New Mexico,West Regional,2
+2012,Marquette,Murray State,Marquette,Murray State,West Regional,2
+2012,Florida,Norfolk State,Florida,Norfolk State,West Regional,2
+2012,Michigan State,Louisville,Louisville,Michigan State,West Regional,3
+2012,Marquette,Florida,Florida,Marquette,West Regional,3
+2012,Louisville,Florida,Louisville,Florida,West Regional,4
+2012,Kentucky,Western Kentucky,Kentucky,Western Kentucky,South Regional,1
+2012,Iowa State,Connecticut,Iowa State,Connecticut,South Regional,1
+2012,Wichita State,VCU,VCU,Wichita State,South Regional,1
+2012,Indiana,New Mexico State,Indiana,New Mexico State,South Regional,1
+2012,Baylor,South Dakota State,Baylor,South Dakota State,South Regional,1
+2012,UNLV,Colorado,Colorado,UNLV,South Regional,1
+2012,Notre Dame,Xavier,Xavier,Notre Dame,South Regional,1
+2012,Duke,Lehigh,Lehigh,Duke,South Regional,1
+2012,Kentucky,Iowa State,Kentucky,Iowa State,South Regional,2
+2012,Indiana,VCU,Indiana,VCU,South Regional,2
+2012,Baylor,Colorado,Baylor,Colorado,South Regional,2
+2012,Xavier,Lehigh,Xavier,Lehigh,South Regional,2
+2012,Kentucky,Indiana,Kentucky,Indiana,South Regional,3
+2012,Baylor,Xavier,Baylor,Xavier,South Regional,3
+2012,Kentucky,Baylor,Kentucky,Baylor,South Regional,4
+2012,North Carolina,Vermont,North Carolina,Vermont,Midwest Regional,1
+2012,Creighton,Alabama,Creighton,Alabama,Midwest Regional,1
+2012,Temple,South Florida,South Florida,Temple,Midwest Regional,1
+2012,Michigan,Ohio,Ohio,Michigan,Midwest Regional,1
+2012,Georgetown,Belmont,Georgetown,Belmont,Midwest Regional,1
+2012,San Diego State,NC State,NC State,San Diego State,Midwest Regional,1
+2012,Saint Mary's,Purdue,Purdue,Saint Mary's,Midwest Regional,1
+2012,Kansas,Detroit-Mercy,Kansas,Detroit-Mercy,Midwest Regional,1
+2012,North Carolina,Creighton,North Carolina,Creighton,Midwest Regional,2
+2012,South Florida,Ohio,Ohio,South Florida,Midwest Regional,2
+2012,Georgetown,NC State,NC State,Georgetown,Midwest Regional,2
+2012,Kansas,Purdue,Kansas,Purdue,Midwest Regional,2
+2012,North Carolina,Ohio,North Carolina,Ohio,Midwest Regional,3
+2012,Kansas,NC State,Kansas,NC State,Midwest Regional,3
+2012,North Carolina,Kansas,Kansas,North Carolina,Midwest Regional,4
+2012,Kentucky,Louisville,Kentucky,Louisville,none,5
+2012,Kansas,Ohio State,Kansas,Ohio State,none,5
+2012,Kentucky,Kansas,Kentucky,Kansas,none,6
 South Regional,West Regional,Midwest Regional,East Regional

@@ -86,9 +86,9 @@ for year in range(2003, 2023):
             team1_name = bracket.pop(0)
             team1_score = int(bracket.pop(0))
             if team0_score > team1_score:
-                results.append([year, team0_name, team1_name, region, round])
+                results.append([year, team0_name, team1_name, team0_name, team1_name, region, round])
             else:
-                results.append([year, team1_name, team0_name, region, round])
+                results.append([year, team0_name, team1_name, team1_name, team0_name, region, round])
 
             # tracks what region each team is in
             if team0_name not in team_region and region != "none":
@@ -103,7 +103,7 @@ for year in range(2003, 2023):
     with open(csv_file_path, "w") as f:
         write = csv.writer(f)
         # here are the column headers
-        categories = ["year", "winner", "loser", "region", "round"]
+        categories = ["year", "team1", "team2", "winner", "loser", "region", "round"]
         write.writerow(categories)
         while results:
             result = results.pop(0)

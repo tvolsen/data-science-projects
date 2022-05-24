@@ -1,69 +1,69 @@
-year,winner,loser,region,round
-2017,Mount St. Mary's,New Orleans,none,0
-2017,Kansas State,Wake Forest,none,0
-2017,UC Davis,North Carolina Central,none,0
-2017,USC,Providence,none,0
-2017,Kansas,UC Davis,Midwest Regional,1
-2017,Michigan State,Miami,Midwest Regional,1
-2017,Iowa State,Nevada,Midwest Regional,1
-2017,Purdue,Vermont,Midwest Regional,1
-2017,Rhode Island,Creighton,Midwest Regional,1
-2017,Oregon,Iona,Midwest Regional,1
-2017,Michigan,Oklahoma State,Midwest Regional,1
-2017,Louisville,Jacksonville State,Midwest Regional,1
-2017,Kansas,Michigan State,Midwest Regional,2
-2017,Purdue,Iowa State,Midwest Regional,2
-2017,Oregon,Rhode Island,Midwest Regional,2
-2017,Michigan,Louisville,Midwest Regional,2
-2017,Kansas,Purdue,Midwest Regional,3
-2017,Oregon,Michigan,Midwest Regional,3
-2017,Oregon,Kansas,Midwest Regional,4
-2017,Gonzaga,South Dakota State,West Regional,1
-2017,Northwestern,Vanderbilt,West Regional,1
-2017,Notre Dame,Princeton,West Regional,1
-2017,West Virginia,Bucknell,West Regional,1
-2017,Xavier,Maryland,West Regional,1
-2017,Florida State,Florida Gulf Coast,West Regional,1
-2017,Saint Mary's,VCU,West Regional,1
-2017,Arizona,North Dakota,West Regional,1
-2017,Gonzaga,Northwestern,West Regional,2
-2017,West Virginia,Notre Dame,West Regional,2
-2017,Xavier,Florida State,West Regional,2
-2017,Arizona,Saint Mary's,West Regional,2
-2017,Gonzaga,West Virginia,West Regional,3
-2017,Xavier,Arizona,West Regional,3
-2017,Gonzaga,Xavier,West Regional,4
-2017,Villanova,Mount St. Mary's,East Regional,1
-2017,Wisconsin,Virginia Tech,East Regional,1
-2017,Virginia,UNC Wilmington,East Regional,1
-2017,Florida,East Tennessee State,East Regional,1
-2017,USC,Southern Methodist,East Regional,1
-2017,Baylor,New Mexico State,East Regional,1
-2017,South Carolina,Marquette,East Regional,1
-2017,Duke,Troy,East Regional,1
-2017,Wisconsin,Villanova,East Regional,2
-2017,Florida,Virginia,East Regional,2
-2017,Baylor,USC,East Regional,2
-2017,South Carolina,Duke,East Regional,2
-2017,Florida,Wisconsin,East Regional,3
-2017,South Carolina,Baylor,East Regional,3
-2017,South Carolina,Florida,East Regional,4
-2017,North Carolina,Texas Southern,South Regional,1
-2017,Arkansas,Seton Hall,South Regional,1
-2017,Middle Tennessee State,Minnesota,South Regional,1
-2017,Butler,Winthrop,South Regional,1
-2017,Cincinnati,Kansas State,South Regional,1
-2017,UCLA,Kent State,South Regional,1
-2017,Wichita State,Dayton,South Regional,1
-2017,Kentucky,Northern Kentucky,South Regional,1
-2017,North Carolina,Arkansas,South Regional,2
-2017,Butler,Middle Tennessee State,South Regional,2
-2017,UCLA,Cincinnati,South Regional,2
-2017,Kentucky,Wichita State,South Regional,2
-2017,North Carolina,Butler,South Regional,3
-2017,Kentucky,UCLA,South Regional,3
-2017,North Carolina,Kentucky,South Regional,4
-2017,Gonzaga,South Carolina,none,5
-2017,North Carolina,Oregon,none,5
-2017,North Carolina,Gonzaga,none,6
+year,team1,team2,winner,loser,region,round
+2017,Mount St. Mary's,New Orleans,Mount St. Mary's,New Orleans,none,0
+2017,Kansas State,Wake Forest,Kansas State,Wake Forest,none,0
+2017,North Carolina Central,UC Davis,UC Davis,North Carolina Central,none,0
+2017,Providence,USC,USC,Providence,none,0
+2017,Kansas,UC Davis,Kansas,UC Davis,Midwest Regional,1
+2017,Miami,Michigan State,Michigan State,Miami,Midwest Regional,1
+2017,Iowa State,Nevada,Iowa State,Nevada,Midwest Regional,1
+2017,Purdue,Vermont,Purdue,Vermont,Midwest Regional,1
+2017,Creighton,Rhode Island,Rhode Island,Creighton,Midwest Regional,1
+2017,Oregon,Iona,Oregon,Iona,Midwest Regional,1
+2017,Michigan,Oklahoma State,Michigan,Oklahoma State,Midwest Regional,1
+2017,Louisville,Jacksonville State,Louisville,Jacksonville State,Midwest Regional,1
+2017,Kansas,Michigan State,Kansas,Michigan State,Midwest Regional,2
+2017,Purdue,Iowa State,Purdue,Iowa State,Midwest Regional,2
+2017,Oregon,Rhode Island,Oregon,Rhode Island,Midwest Regional,2
+2017,Louisville,Michigan,Michigan,Louisville,Midwest Regional,2
+2017,Kansas,Purdue,Kansas,Purdue,Midwest Regional,3
+2017,Oregon,Michigan,Oregon,Michigan,Midwest Regional,3
+2017,Kansas,Oregon,Oregon,Kansas,Midwest Regional,4
+2017,Gonzaga,South Dakota State,Gonzaga,South Dakota State,West Regional,1
+2017,Northwestern,Vanderbilt,Northwestern,Vanderbilt,West Regional,1
+2017,Notre Dame,Princeton,Notre Dame,Princeton,West Regional,1
+2017,West Virginia,Bucknell,West Virginia,Bucknell,West Regional,1
+2017,Maryland,Xavier,Xavier,Maryland,West Regional,1
+2017,Florida State,Florida Gulf Coast,Florida State,Florida Gulf Coast,West Regional,1
+2017,Saint Mary's,VCU,Saint Mary's,VCU,West Regional,1
+2017,Arizona,North Dakota,Arizona,North Dakota,West Regional,1
+2017,Gonzaga,Northwestern,Gonzaga,Northwestern,West Regional,2
+2017,West Virginia,Notre Dame,West Virginia,Notre Dame,West Regional,2
+2017,Florida State,Xavier,Xavier,Florida State,West Regional,2
+2017,Arizona,Saint Mary's,Arizona,Saint Mary's,West Regional,2
+2017,Gonzaga,West Virginia,Gonzaga,West Virginia,West Regional,3
+2017,Arizona,Xavier,Xavier,Arizona,West Regional,3
+2017,Gonzaga,Xavier,Gonzaga,Xavier,West Regional,4
+2017,Villanova,Mount St. Mary's,Villanova,Mount St. Mary's,East Regional,1
+2017,Wisconsin,Virginia Tech,Wisconsin,Virginia Tech,East Regional,1
+2017,Virginia,UNC Wilmington,Virginia,UNC Wilmington,East Regional,1
+2017,Florida,East Tennessee State,Florida,East Tennessee State,East Regional,1
+2017,Southern Methodist,USC,USC,Southern Methodist,East Regional,1
+2017,Baylor,New Mexico State,Baylor,New Mexico State,East Regional,1
+2017,South Carolina,Marquette,South Carolina,Marquette,East Regional,1
+2017,Duke,Troy,Duke,Troy,East Regional,1
+2017,Villanova,Wisconsin,Wisconsin,Villanova,East Regional,2
+2017,Florida,Virginia,Florida,Virginia,East Regional,2
+2017,Baylor,USC,Baylor,USC,East Regional,2
+2017,Duke,South Carolina,South Carolina,Duke,East Regional,2
+2017,Florida,Wisconsin,Florida,Wisconsin,East Regional,3
+2017,Baylor,South Carolina,South Carolina,Baylor,East Regional,3
+2017,Florida,South Carolina,South Carolina,Florida,East Regional,4
+2017,North Carolina,Texas Southern,North Carolina,Texas Southern,South Regional,1
+2017,Arkansas,Seton Hall,Arkansas,Seton Hall,South Regional,1
+2017,Minnesota,Middle Tennessee State,Middle Tennessee State,Minnesota,South Regional,1
+2017,Butler,Winthrop,Butler,Winthrop,South Regional,1
+2017,Cincinnati,Kansas State,Cincinnati,Kansas State,South Regional,1
+2017,UCLA,Kent State,UCLA,Kent State,South Regional,1
+2017,Dayton,Wichita State,Wichita State,Dayton,South Regional,1
+2017,Kentucky,Northern Kentucky,Kentucky,Northern Kentucky,South Regional,1
+2017,North Carolina,Arkansas,North Carolina,Arkansas,South Regional,2
+2017,Butler,Middle Tennessee State,Butler,Middle Tennessee State,South Regional,2
+2017,UCLA,Cincinnati,UCLA,Cincinnati,South Regional,2
+2017,Kentucky,Wichita State,Kentucky,Wichita State,South Regional,2
+2017,North Carolina,Butler,North Carolina,Butler,South Regional,3
+2017,Kentucky,UCLA,Kentucky,UCLA,South Regional,3
+2017,North Carolina,Kentucky,North Carolina,Kentucky,South Regional,4
+2017,Gonzaga,South Carolina,Gonzaga,South Carolina,none,5
+2017,North Carolina,Oregon,North Carolina,Oregon,none,5
+2017,North Carolina,Gonzaga,North Carolina,Gonzaga,none,6
 West Regional,East Regional,South Regional,Midwest Regional

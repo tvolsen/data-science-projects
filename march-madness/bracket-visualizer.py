@@ -1,9 +1,9 @@
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
-
 import pandas as pd
+year = 2022
 
-games = pd.read_csv("brackets/2022-bracket.csv")
+games = pd.read_csv(f"brackets/{year}-bracket.csv")
 regions = games[-1:]
 regions = list(regions.iloc[0])[:-1]
 games = games[:-1]
@@ -14,7 +14,9 @@ def add_image(image_path):
     c = canvas.Canvas("predictions/test.pdf", pagesize=letter)
     c.drawImage(image_path, 6, -10, width=600, height=800)
     c.setFontSize(16)
-    c.drawString(190, 770, "2003")
+    c.drawString(190, 770, f"{year}")
+    c.setFontSize(6)
+    c.drawString(260, 760, "(higher seed is always on the top)")
     c.setFillColorRGB(1, 0, 0)
     c.setFillColorRGB(0, 1, 0)
     c.setFontSize(7)
@@ -29,51 +31,48 @@ def add_image(image_path):
         "right" : lambda x: x
     }
 
-    def draw_round1(x, y, dir, df):
-        df = df[df["round"] == 1]
-        games = list(zip(df["winner"], df["loser"], df["prediction"]))
-        print(games)
+    y_drop = {
+        1 : 30.5,
+        2 : 61,
+        3 : 123,
+        4 : 0
+    }
 
-        c.setFontSize(7)
-        for i in range(8):
-            winner, loser, prediction = games.pop(0)
-            text_alignment[dir](text_location[dir](x), y, 'North Carolina Central'[:18])
-            text_alignment[dir](text_location[dir](x), y-17, 'North Caroaana Central'[:18])
-            y -= 30.5
+    team2_drop = {
+        1 : 17,
+        2 : 17,
+        3 : 45,
+        4 : 105
+    }
 
-    def draw_round2(x, y, dir, df):
+    def draw_round(x, y, dir, df, round):
+        df = df[df["round"] == round]
+        df = list(zip(df["team1"], df["team2"], df["winner"], df["prediction"]))
         c.setFontSize(7)
-        for i in range(4):
-            text_alignment[dir](text_location[dir](x), y, 'North Carolina Central'[:18])
-            text_alignment[dir](text_location[dir](x), y-17, 'North Carolina Central'[:18])
-            y -= 61
-    
-    def draw_round3(x, y, dir, df):
-        c.setFontSize(7)
-        for i in range(2):
-            text_alignment[dir](text_location[dir](x), y, 'Miami'[:18])
-            text_alignment[dir](text_location[dir](x), y-45, 'North Carolina Central'[:18])
-            y -= 123
+        if round < 5:
+            for i in range(8 // 2**(round-1)):
+                team1, team2, winner, prediction = df.pop(0)
+                if team1 == winner and prediction == team1:
+                    c.setFillColorRGB(0, 1, 0)
+                    text_alignment[dir](text_location[dir](x), y, team1[:18])
+                elif team1 == winner and prediction != team1:
+                    c.setFillColorRGB(1, 0, 0)
+                    text_alignment[dir](text_location[dir](x), y, team1[:18])
+                else:
+                    c.setFillColorRGB(0, 0, 0)
+                    text_alignment[dir](text_location[dir](x), y, team1[:18])
+                if team2 == winner and prediction == team2:
+                    c.setFillColorRGB(0, 1, 0)
+                    text_alignment[dir](text_location[dir](x), y-team2_drop[round], team2[:18])
+                elif team2 == winner and prediction != team2:
+                    c.setFillColorRGB(1, 0, 0)
+                    text_alignment[dir](text_location[dir](x), y-team2_drop[round], team2[:18])
+                else:
+                    c.setFillColorRGB(0, 0, 0)
+                    text_alignment[dir](text_location[dir](x), y-team2_drop[round], team2[:18])  
+                y -= y_drop[round]
 
-    def draw_round4(x, y, dir, df):
-        c.setFontSize(7)
-        text_alignment[dir](text_location[dir](x), y, 'North Carolina Central'[:18])
-        text_alignment[dir](text_location[dir](x), y-105, 'North Carolina Central'[:18])
-
-    def draw_round5():
-        c.setFontSize(7)
-        c.drawRightString(255, 395, 'Miami'[:18])
-        c.drawRightString(255, 350, 'Miami'[:18])
-        c.drawString(351, 395, 'Miami'[:18])
-        c.drawString(351, 350, 'Miami'[:18])
-
-    def draw_round6():
-        c.setFontSize(7)
-        c.drawString(259, 377, 'Miasdfasdfasdfasdfsadfmi'[:18])
-        c.drawRightString(347, 370, 'Miaasfasdfasfasdfmi'[:18])
-        c.drawCentredString(303, 400, "Miami")
-
-    def draw_region(name, position):
+    def draw_region(name, position, games):
         df = games[games["region"] == name]            
         if position == "top left":
             # draw the region name
@@ -82,42 +81,116 @@ def add_image(image_path):
             c.drawCentredString(160, 683, name)
 
             # draw the teams
-            draw_round1(20, 655, "left", df)
-            draw_round2(90, 640, "left", df)
-            draw_round3(160, 625, "left", df)
-            draw_round4(230, 595, "left", df)
+            draw_round(20, 655, "left", df, 1)
+            draw_round(90, 640, "left", df, 2)
+            draw_round(160, 625, "left", df, 3)
+            draw_round(230, 595, "left", df, 4)
         elif position == "bottom left":
             # bottom left
             c.setFontSize(20)
             c.setFillColorRGB(0, 0, 0)
             c.drawCentredString(160, 50, name)
-            draw_round1(20, 318, "left")
-            draw_round2(90, 303, "left")
-            draw_round3(160, 288, "left")
-            draw_round4(230, 258, "left")
+            draw_round(20, 318, "left", df, 1)
+            draw_round(90, 303, "left", df, 2)
+            draw_round(160, 288, "left", df, 3)
+            draw_round(230, 258, "left", df, 4)
         elif position == "top right":
             # top right
             c.setFontSize(20)
             c.setFillColorRGB(0, 0, 0)
             c.drawCentredString(452, 683, name)
-            draw_round1(528, 655, "right")
-            draw_round2(458, 640, "right")
-            draw_round3(388, 625, "right")
-            draw_round4(318, 595, "right")
+            draw_round(528, 655, "right", df, 1)
+            draw_round(458, 640, "right", df, 2)
+            draw_round(388, 625, "right", df, 3)
+            draw_round(318, 595, "right", df, 4)
         elif position == "bottom right":
             #bottom right
             c.setFontSize(20)
             c.drawCentredString(452, 50, name)
-            draw_round1(528, 318, "right")
-            draw_round2(458, 303, "right")
-            draw_round3(388, 288, "right")
-            draw_round4(318, 258, "right")
+            draw_round(528, 318, "right", df, 1)
+            draw_round(458, 303, "right", df, 2)
+            draw_round(388, 288, "right", df, 3)
+            draw_round(318, 258, "right", df, 4)
         else:
             print("Invalid position")
             exit(1)
+
+    def draw_finals(games):
+        df = games[games["round"] == 5]
+        df = list(zip(df["team1"], df["team2"], df["winner"], df["prediction"]))
+        team1, team2, winner, prediction = df.pop(0)
+        if team1 == winner and prediction == team1:
+            c.setFillColorRGB(0, 1, 0)
+            c.drawRightString(255, 395, team1[:18])
+        elif team1 == winner and prediction != team1:
+            c.setFillColorRGB(1, 0, 0)
+            c.drawRightString(255, 395, team1[:18])
+        else:
+            c.setFillColorRGB(0, 0, 0)
+            c.drawRightString(255, 395, team1[:18])
+        if team2 == winner and prediction == team2:
+            c.setFillColorRGB(0, 1, 0)
+            c.drawRightString(255, 350, team2[:18])
+        elif team2 == winner and prediction != team2:
+            c.setFillColorRGB(1, 0, 0)
+            c.drawRightString(255, 350, team2[:18])
+        else:
+            c.setFillColorRGB(0, 0, 0)
+            c.drawRightString(255, 350, team2[:18]) 
+
+        team1, team2, winner, prediction = df.pop(0)
+        if team1 == winner and prediction == team1:
+            c.setFillColorRGB(0, 1, 0)
+            c.drawString(351, 395, team1[:18])
+        elif team1 == winner and prediction != team1:
+            c.setFillColorRGB(1, 0, 0)
+            c.drawString(351, 395, team1[:18])
+        else:
+            c.setFillColorRGB(0, 0, 0)
+            c.drawString(351, 395, team1[:18])
+        if team2 == winner and prediction == team2:
+            c.setFillColorRGB(0, 1, 0)
+            c.drawString(351, 350, team2[:18])
+        elif team2 == winner and prediction != team2:
+            c.setFillColorRGB(1, 0, 0)
+            c.drawString(351, 350, team2[:18])
+        else:
+            c.setFillColorRGB(0, 0, 0)
+            c.drawString(351, 350, team2[:18])
+
+
+        df = games[games["round"] == 6]
+        df = list(zip(df["team1"], df["team2"], df["winner"], df["prediction"]))
+        team1, team2, winner, prediction = df.pop(0)
+        if team1 == winner and prediction == team1:
+            c.setFillColorRGB(0, 1, 0)
+            c.drawString(259, 377, team1[:18])
+        elif team1 == winner and prediction != team1:
+            c.setFillColorRGB(1, 0, 0)
+            c.drawString(259, 377, team1[:18])
+        else:
+            c.setFillColorRGB(0, 0, 0)
+            c.drawString(259, 377, team1[:18])
+        if team2 == winner and prediction == team2:
+            c.setFillColorRGB(0, 1, 0)
+            c.drawRightString(347, 370, team2[:18])
+        elif team2 == winner and prediction != team2:
+            c.setFillColorRGB(1, 0, 0)
+            c.drawRightString(347, 370, team2[:18])
+        else:
+            c.setFillColorRGB(0, 0, 0)
+            c.drawRightString(347, 370, team2[:18])
+            
+        if winner == prediction:
+            c.setFillColorRGB(0, 1, 0)
+            c.drawCentredString(303, 400, prediction)
+        else:
+            c.setFillColorRGB(1, 0, 0)
+            c.drawCentredString(303, 400, prediction)
+
     for name, position in zip(regions, positions):
-        if position == "top left":
-            draw_region(name, position)
+        draw_region(name, position, games)
+    draw_finals(games)
 
     c.save()
     
