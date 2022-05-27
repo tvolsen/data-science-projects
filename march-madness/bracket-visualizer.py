@@ -38,7 +38,7 @@ def add_image(image_path):
         4 : 0
     }
 
-    team2_drop = {
+    team1_drop = {
         1 : 17,
         2 : 17,
         3 : 45,
@@ -47,29 +47,29 @@ def add_image(image_path):
 
     def draw_round(x, y, dir, df, round):
         df = df[df["round"] == round]
-        df = list(zip(df["team1"], df["team2"], df["winner"], df["prediction"]))
+        df = list(zip(df["team0"], df["team1"], df["winner"], df["prediction"]))
         c.setFontSize(7)
         if round < 5:
             for i in range(8 // 2**(round-1)):
-                team1, team2, winner, prediction = df.pop(0)
+                team0, team1, winner, prediction = df.pop(0)
+                if team0 == winner and prediction == team0:
+                    c.setFillColorRGB(0, 1, 0)
+                    text_alignment[dir](text_location[dir](x), y, team0[:18])
+                elif team0 == winner and prediction != team0:
+                    c.setFillColorRGB(1, 0, 0)
+                    text_alignment[dir](text_location[dir](x), y, team0[:18])
+                else:
+                    c.setFillColorRGB(0, 0, 0)
+                    text_alignment[dir](text_location[dir](x), y, team0[:18])
                 if team1 == winner and prediction == team1:
                     c.setFillColorRGB(0, 1, 0)
-                    text_alignment[dir](text_location[dir](x), y, team1[:18])
+                    text_alignment[dir](text_location[dir](x), y-team1_drop[round], team1[:18])
                 elif team1 == winner and prediction != team1:
                     c.setFillColorRGB(1, 0, 0)
-                    text_alignment[dir](text_location[dir](x), y, team1[:18])
+                    text_alignment[dir](text_location[dir](x), y-team1_drop[round], team1[:18])
                 else:
                     c.setFillColorRGB(0, 0, 0)
-                    text_alignment[dir](text_location[dir](x), y, team1[:18])
-                if team2 == winner and prediction == team2:
-                    c.setFillColorRGB(0, 1, 0)
-                    text_alignment[dir](text_location[dir](x), y-team2_drop[round], team2[:18])
-                elif team2 == winner and prediction != team2:
-                    c.setFillColorRGB(1, 0, 0)
-                    text_alignment[dir](text_location[dir](x), y-team2_drop[round], team2[:18])
-                else:
-                    c.setFillColorRGB(0, 0, 0)
-                    text_alignment[dir](text_location[dir](x), y-team2_drop[round], team2[:18])  
+                    text_alignment[dir](text_location[dir](x), y-team1_drop[round], team1[:18])  
                 y -= y_drop[round]
 
     def draw_region(name, position, games):
@@ -117,69 +117,69 @@ def add_image(image_path):
 
     def draw_finals(games):
         df = games[games["round"] == 5]
-        df = list(zip(df["team1"], df["team2"], df["winner"], df["prediction"]))
-        team1, team2, winner, prediction = df.pop(0)
+        df = list(zip(df["team0"], df["team1"], df["winner"], df["prediction"]))
+        team0, team1, winner, prediction = df.pop(0)
+        if team0 == winner and prediction == team0:
+            c.setFillColorRGB(0, 1, 0)
+            c.drawRightString(255, 395, team0[:18])
+        elif team0 == winner and prediction != team0:
+            c.setFillColorRGB(1, 0, 0)
+            c.drawRightString(255, 395, team0[:18])
+        else:
+            c.setFillColorRGB(0, 0, 0)
+            c.drawRightString(255, 395, team0[:18])
         if team1 == winner and prediction == team1:
             c.setFillColorRGB(0, 1, 0)
-            c.drawRightString(255, 395, team1[:18])
+            c.drawRightString(255, 350, team1[:18])
         elif team1 == winner and prediction != team1:
             c.setFillColorRGB(1, 0, 0)
-            c.drawRightString(255, 395, team1[:18])
+            c.drawRightString(255, 350, team1[:18])
         else:
             c.setFillColorRGB(0, 0, 0)
-            c.drawRightString(255, 395, team1[:18])
-        if team2 == winner and prediction == team2:
-            c.setFillColorRGB(0, 1, 0)
-            c.drawRightString(255, 350, team2[:18])
-        elif team2 == winner and prediction != team2:
-            c.setFillColorRGB(1, 0, 0)
-            c.drawRightString(255, 350, team2[:18])
-        else:
-            c.setFillColorRGB(0, 0, 0)
-            c.drawRightString(255, 350, team2[:18]) 
+            c.drawRightString(255, 350, team1[:18]) 
 
-        team1, team2, winner, prediction = df.pop(0)
+        team0, team1, winner, prediction = df.pop(0)
+        if team0 == winner and prediction == team0:
+            c.setFillColorRGB(0, 1, 0)
+            c.drawString(351, 395, team0[:18])
+        elif team0 == winner and prediction != team0:
+            c.setFillColorRGB(1, 0, 0)
+            c.drawString(351, 395, team0[:18])
+        else:
+            c.setFillColorRGB(0, 0, 0)
+            c.drawString(351, 395, team0[:18])
         if team1 == winner and prediction == team1:
             c.setFillColorRGB(0, 1, 0)
-            c.drawString(351, 395, team1[:18])
+            c.drawString(351, 350, team1[:18])
         elif team1 == winner and prediction != team1:
             c.setFillColorRGB(1, 0, 0)
-            c.drawString(351, 395, team1[:18])
+            c.drawString(351, 350, team1[:18])
         else:
             c.setFillColorRGB(0, 0, 0)
-            c.drawString(351, 395, team1[:18])
-        if team2 == winner and prediction == team2:
-            c.setFillColorRGB(0, 1, 0)
-            c.drawString(351, 350, team2[:18])
-        elif team2 == winner and prediction != team2:
-            c.setFillColorRGB(1, 0, 0)
-            c.drawString(351, 350, team2[:18])
-        else:
-            c.setFillColorRGB(0, 0, 0)
-            c.drawString(351, 350, team2[:18])
+            c.drawString(351, 350, team1[:18])
 
 
         df = games[games["round"] == 6]
-        df = list(zip(df["team1"], df["team2"], df["winner"], df["prediction"]))
-        team1, team2, winner, prediction = df.pop(0)
+        df = list(zip(df["team0"], df["team1"], df["winner"], df["prediction"]))
+        team0, team1, winner, prediction = df.pop(0)
+        if team0 == winner and prediction == team0:
+            c.setFillColorRGB(0, 1, 0)
+            c.drawString(259, 377, team0[:18])
+        elif team0 == winner and prediction != team0:
+            c.setFillColorRGB(1, 0, 0)
+            c.drawString(259, 377, team0[:18])
+        else:
+            c.setFillColorRGB(0, 0, 0)
+            c.drawString(259, 377, team0[:18])
         if team1 == winner and prediction == team1:
             c.setFillColorRGB(0, 1, 0)
-            c.drawString(259, 377, team1[:18])
+            c.drawRightString(347, 370, team1[:18])
         elif team1 == winner and prediction != team1:
             c.setFillColorRGB(1, 0, 0)
-            c.drawString(259, 377, team1[:18])
+            c.drawRightString(347, 370, team1[:18])
         else:
             c.setFillColorRGB(0, 0, 0)
-            c.drawString(259, 377, team1[:18])
-        if team2 == winner and prediction == team2:
-            c.setFillColorRGB(0, 1, 0)
-            c.drawRightString(347, 370, team2[:18])
-        elif team2 == winner and prediction != team2:
-            c.setFillColorRGB(1, 0, 0)
-            c.drawRightString(347, 370, team2[:18])
-        else:
-            c.setFillColorRGB(0, 0, 0)
-            c.drawRightString(347, 370, team2[:18])
+            c.drawRightString(347, 370, team1[:18])
             
         if winner == prediction:
             c.setFillColorRGB(0, 1, 0)

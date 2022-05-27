@@ -1,4 +1,4 @@
-year,team1,team2,winner,loser,region,round
+year,team0,team1,winner,loser,region,round
 2016,Vanderbilt,Wichita State,Wichita State,Vanderbilt,none,0
 2016,Fairleigh Dickinson,Florida Gulf Coast,Florida Gulf Coast,Fairleigh Dickinson,none,0
 2016,Michigan,Tulsa,Michigan,Tulsa,none,0
@@ -53,12 +53,12 @@ year,team1,team2,winner,loser,region,round
 2016,Maryland,South Dakota State,Maryland,South Dakota State,South Regional,1
 2016,California,Hawaii,Hawaii,California,South Regional,1
 2016,Arizona,Wichita State,Wichita State,Arizona,South Regional,1
-2016,Miami,Buffalo,Miami,Buffalo,South Regional,1
+2016,Miami (FL),Buffalo,Miami (FL),Buffalo,South Regional,1
 2016,Iowa,Temple,Iowa,Temple,South Regional,1
 2016,Villanova,UNC Asheville,Villanova,UNC Asheville,South Regional,1
 2016,Kansas,Connecticut,Kansas,Connecticut,South Regional,2
 2016,Maryland,Hawaii,Maryland,Hawaii,South Regional,2
-2016,Miami,Wichita State,Miami,Wichita State,South Regional,2
+2016,Miami (FL),Wichita State,Miami (FL),Wichita State,South Regional,2
 2016,Villanova,Iowa,Villanova,Iowa,South Regional,2
 2016,Kansas,Maryland,Kansas,Maryland,South Regional,3
 2016,Villanova,Miami (FL),Villanova,Miami (FL),South Regional,3

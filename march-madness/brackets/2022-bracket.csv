@@ -1,4 +1,4 @@
-year,team1,team2,winner,loser,region,round
+year,team0,team1,winner,loser,region,round
 2022,Texas Southern,Texas A&M-CC,Texas Southern,Texas A&M-CC,none,0
 2022,Wyoming,Indiana,Indiana,Wyoming,none,0
 2022,Wright State,Bryant,Wright State,Bryant,none,0
@@ -61,7 +61,7 @@ year,team1,team2,winner,loser,region,round
 2022,Wisconsin,Iowa State,Iowa State,Wisconsin,Midwest Regional,2
 2022,Auburn,Miami (FL),Miami (FL),Auburn,Midwest Regional,2
 2022,Kansas,Providence,Kansas,Providence,Midwest Regional,3
-2022,Miami,Iowa State,Miami,Iowa State,Midwest Regional,3
+2022,Miami (FL),Iowa State,Miami (FL),Iowa State,Midwest Regional,3
 2022,Kansas,Miami (FL),Kansas,Miami (FL),Midwest Regional,4
 2022,Duke,North Carolina,North Carolina,Duke,none,5
 2022,Kansas,Villanova,Kansas,Villanova,none,5

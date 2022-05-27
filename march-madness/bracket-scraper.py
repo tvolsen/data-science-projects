@@ -71,7 +71,8 @@ for year in range(2003, 2023):
 
     while bracket:
         # remove () from older brackets
-        bracket[0] = bracket[0].split(" (")[0]
+        if "Region" in bracket[0] or "Final Four" in bracket[0]:
+            bracket[0] = bracket[0].split(" (")[0]
         if bracket[0] in rounds_dict:
             round = rounds_dict[bracket.pop(0)]
             # there is no region for the play in games, final four or championship
@@ -103,7 +104,7 @@ for year in range(2003, 2023):
     with open(csv_file_path, "w") as f:
         write = csv.writer(f)
         # here are the column headers
-        categories = ["year", "team1", "team2", "winner", "loser", "region", "round"]
+        categories = ["year", "team0", "team1", "winner", "loser", "region", "round"]
         write.writerow(categories)
         while results:
             result = results.pop(0)

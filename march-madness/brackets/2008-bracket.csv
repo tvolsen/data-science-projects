@@ -1,4 +1,4 @@
-year,team1,team2,winner,loser,region,round
+year,team0,team1,winner,loser,region,round
 2008,Mount St. Mary's,Coppin State,Mount St. Mary's,Coppin State,none,0
 2008,Kansas,Portland State,Kansas,Portland State,Midwest Regional,1
 2008,UNLV,Kent State,UNLV,Kent State,Midwest Regional,1
@@ -51,7 +51,7 @@ year,team1,team2,winner,loser,region,round
 2008,Pittsburgh,Oral Roberts,Pittsburgh,Oral Roberts,South Regional,1
 2008,Marquette,Kentucky,Marquette,Kentucky,South Regional,1
 2008,Stanford,Cornell,Stanford,Cornell,South Regional,1
-2008,Miami,Saint Mary's,Miami,Saint Mary's,South Regional,1
+2008,Miami (FL),Saint Mary's,Miami (FL),Saint Mary's,South Regional,1
 2008,Texas,Austin Peay,Texas,Austin Peay,South Regional,1
 2008,Memphis,Mississippi State,Memphis,Mississippi State,South Regional,2
 2008,Pittsburgh,Michigan State,Michigan State,Pittsburgh,South Regional,2

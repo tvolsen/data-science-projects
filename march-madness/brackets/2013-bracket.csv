@@ -1,4 +1,4 @@
-year,team1,team2,winner,loser,region,round
+year,team0,team1,winner,loser,region,round
 2013,Liberty,North Carolina A&T,North Carolina A&T,Liberty,none,0
 2013,Middle Tennessee State,Saint Mary's,Saint Mary's,Middle Tennessee State,none,0
 2013,Boise State,La Salle,La Salle,Boise State,none,0
@@ -10,13 +10,13 @@ year,team1,team2,winner,loser,region,round
 2013,Butler,Bucknell,Butler,Bucknell,East Regional,1
 2013,Marquette,Davidson,Marquette,Davidson,East Regional,1
 2013,Illinois,Colorado,Illinois,Colorado,East Regional,1
-2013,Miami,Pacific,Miami,Pacific,East Regional,1
+2013,Miami (FL),Pacific,Miami (FL),Pacific,East Regional,1
 2013,Indiana,Temple,Indiana,Temple,East Regional,2
 2013,Syracuse,California,Syracuse,California,East Regional,2
 2013,Marquette,Butler,Marquette,Butler,East Regional,2
-2013,Miami,Illinois,Miami,Illinois,East Regional,2
+2013,Miami (FL),Illinois,Miami (FL),Illinois,East Regional,2
 2013,Indiana,Syracuse,Syracuse,Indiana,East Regional,3
-2013,Miami,Marquette,Marquette,Miami,East Regional,3
+2013,Miami (FL),Marquette,Marquette,Miami (FL),East Regional,3
 2013,Marquette,Syracuse,Syracuse,Marquette,East Regional,4
 2013,Gonzaga,Southern,Gonzaga,Southern,West Regional,1
 2013,Pittsburgh,Wichita State,Wichita State,Pittsburgh,West Regional,1

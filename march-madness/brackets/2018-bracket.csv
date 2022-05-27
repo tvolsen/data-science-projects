@@ -1,4 +1,4 @@
-year,team1,team2,winner,loser,region,round
+year,team0,team1,winner,loser,region,round
 2018,Long Island,Radford,Radford,Long Island,none,0
 2018,St. Bonaventure,UCLA,St. Bonaventure,UCLA,none,0
 2018,North Carolina Central,Texas Southern,Texas Southern,North Carolina Central,none,0
@@ -52,7 +52,7 @@ year,team1,team2,winner,loser,region,round
 2018,Creighton,Kansas State,Kansas State,Creighton,South Regional,1
 2018,Kentucky,Davidson,Kentucky,Davidson,South Regional,1
 2018,Arizona,Buffalo,Buffalo,Arizona,South Regional,1
-2018,Miami,Loyola (IL),Loyola (IL),Miami,South Regional,1
+2018,Miami (FL),Loyola (IL),Loyola (IL),Miami (FL),South Regional,1
 2018,Tennessee,Wright State,Tennessee,Wright State,South Regional,1
 2018,Nevada,Texas,Nevada,Texas,South Regional,1
 2018,Cincinnati,Georgia State,Cincinnati,Georgia State,South Regional,1
