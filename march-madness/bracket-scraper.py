@@ -110,3 +110,14 @@ for year in range(2003, 2023):
             result = results.pop(0)
             write.writerow(result)
         write.writerow(region_matchup)
+
+    # save all of the information to a csv file
+    with open(csv_file_path, "w") as f:
+        write = csv.writer(f)
+        # here are the column headers
+        categories = ["year", "team0", "team1", "winner", "loser", "region", "round"]
+        write.writerow(categories)
+        while results:
+            result = results.pop(0)
+            write.writerow(result)
+        write.writerow(region_matchup)

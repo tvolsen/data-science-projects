@@ -26,7 +26,9 @@ url_year = {
     2022 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2022/1128"
 }
 
-for year in range(2003, 2004):
+curr_year = 2023
+
+for year in range(2003, curr_year + 1):
     # skip the two years most heavily impacted by COVID-19 for stat reliability
     if year == 2020 or year == 2021:
         continue
@@ -68,36 +70,41 @@ for year in range(2003, 2004):
                 seed = floor(seed)
                 team.append(int(seed))
         teams.append(team[:])
-    tournament_record = {}
+    
 
-    # tally the tournament wins and losses in order to remove them to prevent data leakage
-    games_path = f"brackets/{year}-bracket.csv"
-    with open(games_path) as f:
-        reader = csv.reader(f)
-        games = [x for x in reader]
-        # the championship game is not recorded in the team's records for some reason
-        games.pop()
+    # only need to remove tournament records from past years
+    if year != curr_year:
+        
+        tournament_record = {}
 
-    # count the wins and losses of each team in the tournament
-    for game in games:
-        winner = game[1]
-        loser = game[2]
-        if winner not in tournament_record:
-            tournament_record[winner] = [1, 0]
-        else:
-            tournament_record[winner][0] += 1
-        if loser not in tournament_record:
-            tournament_record[loser] = [0, 1]
-        else:
-            tournament_record[loser][1] += 1
+        # tally the tournament wins and losses in order to remove them to prevent data leakage
+        games_path = f"brackets/{year}-bracket.csv"
+        with open(games_path) as f:
+            reader = csv.reader(f)
+            games = [x for x in reader]
+            # the championship game is not recorded in the team's records for some reason
+            games.pop()
 
-    # remove the tournament wins and losses from the season totals to have accurate pre-tournament values
-    for team in teams:
-        name = team[1]
-        tournament_wins = tournament_record[name][0]
-        tournament_losses = tournament_record[name][1]
-        team[3] -= tournament_wins
-        team[4] -= tournament_losses
+        # count the wins and losses of each team in the tournament
+        for game in games:
+            winner = game[1]
+            loser = game[2]
+            if winner not in tournament_record:
+                tournament_record[winner] = [1, 0]
+            else:
+                tournament_record[winner][0] += 1
+            if loser not in tournament_record:
+                tournament_record[loser] = [0, 1]
+            else:
+                tournament_record[loser][1] += 1
+
+        # remove the tournament wins and losses from the season totals to have accurate pre-tournament values
+        for team in teams:
+            name = team[1]
+            tournament_wins = tournament_record[name][0]
+            tournament_losses = tournament_record[name][1]
+            team[3] -= tournament_wins
+            team[4] -= tournament_losses
 
     # save all of the information to a csv file
     with open(csv_file_path, "w") as f:
