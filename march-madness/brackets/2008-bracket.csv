@@ -1,66 +1,65 @@
-year,team0,team1,winner,loser,region,round
-2008,Mount St. Mary's,Coppin State,Mount St. Mary's,Coppin State,none,0
-2008,Kansas,Portland State,Kansas,Portland State,Midwest Regional,1
-2008,UNLV,Kent State,UNLV,Kent State,Midwest Regional,1
-2008,Clemson,Villanova,Villanova,Clemson,Midwest Regional,1
-2008,Vanderbilt,Siena,Siena,Vanderbilt,Midwest Regional,1
-2008,USC,Kansas State,Kansas State,USC,Midwest Regional,1
-2008,Wisconsin,Cal State Fullerton,Wisconsin,Cal State Fullerton,Midwest Regional,1
-2008,Gonzaga,Davidson,Davidson,Gonzaga,Midwest Regional,1
-2008,Georgetown,UMBC,Georgetown,UMBC,Midwest Regional,1
-2008,Kansas,UNLV,Kansas,UNLV,Midwest Regional,2
-2008,Villanova,Siena,Villanova,Siena,Midwest Regional,2
-2008,Wisconsin,Kansas State,Wisconsin,Kansas State,Midwest Regional,2
-2008,Georgetown,Davidson,Davidson,Georgetown,Midwest Regional,2
-2008,Kansas,Villanova,Kansas,Villanova,Midwest Regional,3
-2008,Wisconsin,Davidson,Davidson,Wisconsin,Midwest Regional,3
-2008,Kansas,Davidson,Kansas,Davidson,Midwest Regional,4
-2008,UCLA,Mississippi Valley State,UCLA,Mississippi Valley State,West Regional,1
-2008,Brigham Young,Texas A&M,Texas A&M,Brigham Young,West Regional,1
-2008,Drake,Western Kentucky,Western Kentucky,Drake,West Regional,1
-2008,Connecticut,San Diego,San Diego,Connecticut,West Regional,1
-2008,Purdue,Baylor,Purdue,Baylor,West Regional,1
-2008,Xavier,Georgia,Xavier,Georgia,West Regional,1
-2008,West Virginia,Arizona,West Virginia,Arizona,West Regional,1
-2008,Duke,Belmont,Duke,Belmont,West Regional,1
-2008,UCLA,Texas A&M,UCLA,Texas A&M,West Regional,2
-2008,Western Kentucky,San Diego,Western Kentucky,San Diego,West Regional,2
-2008,Xavier,Purdue,Xavier,Purdue,West Regional,2
-2008,Duke,West Virginia,West Virginia,Duke,West Regional,2
-2008,UCLA,Western Kentucky,UCLA,Western Kentucky,West Regional,3
-2008,Xavier,West Virginia,Xavier,West Virginia,West Regional,3
-2008,UCLA,Xavier,UCLA,Xavier,West Regional,4
-2008,North Carolina,Mount St. Mary's,North Carolina,Mount St. Mary's,East Regional,1
-2008,Indiana,Arkansas,Arkansas,Indiana,East Regional,1
-2008,Notre Dame,George Mason,Notre Dame,George Mason,East Regional,1
-2008,Washington State,Winthrop,Washington State,Winthrop,East Regional,1
-2008,Oklahoma,Saint Joseph's,Oklahoma,Saint Joseph's,East Regional,1
-2008,Louisville,Boise State,Louisville,Boise State,East Regional,1
-2008,Butler,South Alabama,Butler,South Alabama,East Regional,1
-2008,Tennessee,American University,Tennessee,American University,East Regional,1
-2008,North Carolina,Arkansas,North Carolina,Arkansas,East Regional,2
-2008,Washington State,Notre Dame,Washington State,Notre Dame,East Regional,2
-2008,Louisville,Oklahoma,Louisville,Oklahoma,East Regional,2
-2008,Tennessee,Butler,Tennessee,Butler,East Regional,2
-2008,North Carolina,Washington State,North Carolina,Washington State,East Regional,3
-2008,Tennessee,Louisville,Louisville,Tennessee,East Regional,3
-2008,North Carolina,Louisville,North Carolina,Louisville,East Regional,4
-2008,Memphis,Texas-Arlington,Memphis,Texas-Arlington,South Regional,1
-2008,Mississippi State,Oregon,Mississippi State,Oregon,South Regional,1
-2008,Michigan State,Temple,Michigan State,Temple,South Regional,1
-2008,Pittsburgh,Oral Roberts,Pittsburgh,Oral Roberts,South Regional,1
-2008,Marquette,Kentucky,Marquette,Kentucky,South Regional,1
-2008,Stanford,Cornell,Stanford,Cornell,South Regional,1
-2008,Miami (FL),Saint Mary's,Miami (FL),Saint Mary's,South Regional,1
-2008,Texas,Austin Peay,Texas,Austin Peay,South Regional,1
-2008,Memphis,Mississippi State,Memphis,Mississippi State,South Regional,2
-2008,Pittsburgh,Michigan State,Michigan State,Pittsburgh,South Regional,2
-2008,Stanford,Marquette,Stanford,Marquette,South Regional,2
-2008,Texas,Miami (FL),Texas,Miami (FL),South Regional,2
-2008,Memphis,Michigan State,Memphis,Michigan State,South Regional,3
-2008,Texas,Stanford,Texas,Stanford,South Regional,3
-2008,Memphis,Texas,Memphis,Texas,South Regional,4
-2008,North Carolina,Kansas,Kansas,North Carolina,none,5
-2008,Memphis,UCLA,Memphis,UCLA,none,5
-2008,Memphis,Kansas,Kansas,Memphis,none,6
-East Regional,Midwest Regional,South Regional,West Regional
+year,team0,team1,region,round,winner
+2008,Mount St. Mary's,Coppin State,none,0,0
+2008,Kansas,Portland State,Midwest Regional,1,0
+2008,UNLV,Kent State,Midwest Regional,1,0
+2008,Clemson,Villanova,Midwest Regional,1,1
+2008,Vanderbilt,Siena,Midwest Regional,1,1
+2008,USC,Kansas State,Midwest Regional,1,1
+2008,Wisconsin,Cal State Fullerton,Midwest Regional,1,0
+2008,Gonzaga,Davidson,Midwest Regional,1,1
+2008,Georgetown,UMBC,Midwest Regional,1,0
+2008,Kansas,UNLV,Midwest Regional,2,0
+2008,Villanova,Siena,Midwest Regional,2,0
+2008,Wisconsin,Kansas State,Midwest Regional,2,0
+2008,Georgetown,Davidson,Midwest Regional,2,1
+2008,Kansas,Villanova,Midwest Regional,3,0
+2008,Wisconsin,Davidson,Midwest Regional,3,1
+2008,Kansas,Davidson,Midwest Regional,4,0
+2008,UCLA,Mississippi Valley State,West Regional,1,0
+2008,Brigham Young,Texas A&M,West Regional,1,1
+2008,Drake,Western Kentucky,West Regional,1,1
+2008,Connecticut,San Diego,West Regional,1,1
+2008,Purdue,Baylor,West Regional,1,0
+2008,Xavier,Georgia,West Regional,1,0
+2008,West Virginia,Arizona,West Regional,1,0
+2008,Duke,Belmont,West Regional,1,0
+2008,UCLA,Texas A&M,West Regional,2,0
+2008,Western Kentucky,San Diego,West Regional,2,0
+2008,Xavier,Purdue,West Regional,2,0
+2008,Duke,West Virginia,West Regional,2,1
+2008,UCLA,Western Kentucky,West Regional,3,0
+2008,Xavier,West Virginia,West Regional,3,0
+2008,UCLA,Xavier,West Regional,4,0
+2008,North Carolina,Mount St. Mary's,East Regional,1,0
+2008,Indiana,Arkansas,East Regional,1,1
+2008,Notre Dame,George Mason,East Regional,1,0
+2008,Washington State,Winthrop,East Regional,1,0
+2008,Oklahoma,Saint Joseph's,East Regional,1,0
+2008,Louisville,Boise State,East Regional,1,0
+2008,Butler,South Alabama,East Regional,1,0
+2008,Tennessee,American University,East Regional,1,0
+2008,North Carolina,Arkansas,East Regional,2,0
+2008,Washington State,Notre Dame,East Regional,2,0
+2008,Louisville,Oklahoma,East Regional,2,0
+2008,Tennessee,Butler,East Regional,2,0
+2008,North Carolina,Washington State,East Regional,3,0
+2008,Tennessee,Louisville,East Regional,3,1
+2008,North Carolina,Louisville,East Regional,4,0
+2008,Memphis,Texas-Arlington,South Regional,1,0
+2008,Mississippi State,Oregon,South Regional,1,0
+2008,Michigan State,Temple,South Regional,1,0
+2008,Pittsburgh,Oral Roberts,South Regional,1,0
+2008,Marquette,Kentucky,South Regional,1,0
+2008,Stanford,Cornell,South Regional,1,0
+2008,Miami (FL),Saint Mary's,South Regional,1,0
+2008,Texas,Austin Peay,South Regional,1,0
+2008,Memphis,Mississippi State,South Regional,2,0
+2008,Pittsburgh,Michigan State,South Regional,2,1
+2008,Stanford,Marquette,South Regional,2,0
+2008,Texas,Miami (FL),South Regional,2,0
+2008,Memphis,Michigan State,South Regional,3,0
+2008,Texas,Stanford,South Regional,3,0
+2008,Memphis,Texas,South Regional,4,0
+2008,North Carolina,Kansas,none,5,1
+2008,Memphis,UCLA,none,5,0
+2008,Memphis,Kansas,none,6,1

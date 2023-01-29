@@ -1,66 +1,65 @@
-year,team0,team1,winner,loser,region,round
-2006,Monmouth,Hampton,Monmouth,Hampton,none,0
-2006,Villanova,Monmouth,Villanova,Monmouth,Midwest Regional,1
-2006,Arizona,Wisconsin,Arizona,Wisconsin,Midwest Regional,1
-2006,Nevada,Montana,Montana,Nevada,Midwest Regional,1
-2006,Boston College,Pacific,Boston College,Pacific,Midwest Regional,1
-2006,Oklahoma,Milwaukee,Milwaukee,Oklahoma,Midwest Regional,1
-2006,Florida,South Alabama,Florida,South Alabama,Midwest Regional,1
-2006,Georgetown,Northern Iowa,Georgetown,Northern Iowa,Midwest Regional,1
-2006,Ohio State,Davidson,Ohio State,Davidson,Midwest Regional,1
-2006,Villanova,Arizona,Villanova,Arizona,Midwest Regional,2
-2006,Boston College,Montana,Boston College,Montana,Midwest Regional,2
-2006,Florida,Milwaukee,Florida,Milwaukee,Midwest Regional,2
-2006,Ohio State,Georgetown,Georgetown,Ohio State,Midwest Regional,2
-2006,Villanova,Boston College,Villanova,Boston College,Midwest Regional,3
-2006,Florida,Georgetown,Florida,Georgetown,Midwest Regional,3
-2006,Villanova,Florida,Florida,Villanova,Midwest Regional,4
-2006,Memphis,Oral Roberts,Memphis,Oral Roberts,West Regional,1
-2006,Arkansas,Bucknell,Bucknell,Arkansas,West Regional,1
-2006,Pittsburgh,Kent State,Pittsburgh,Kent State,West Regional,1
-2006,Kansas,Bradley,Bradley,Kansas,West Regional,1
-2006,Indiana,San Diego State,Indiana,San Diego State,West Regional,1
-2006,Gonzaga,Xavier,Gonzaga,Xavier,West Regional,1
-2006,Marquette,Alabama,Alabama,Marquette,West Regional,1
-2006,UCLA,Belmont,UCLA,Belmont,West Regional,1
-2006,Memphis,Bucknell,Memphis,Bucknell,West Regional,2
-2006,Pittsburgh,Bradley,Bradley,Pittsburgh,West Regional,2
-2006,Gonzaga,Indiana,Gonzaga,Indiana,West Regional,2
-2006,UCLA,Alabama,UCLA,Alabama,West Regional,2
-2006,Memphis,Bradley,Memphis,Bradley,West Regional,3
-2006,UCLA,Gonzaga,UCLA,Gonzaga,West Regional,3
-2006,Memphis,UCLA,UCLA,Memphis,West Regional,4
-2006,Connecticut,Albany,Connecticut,Albany,East Regional,1
-2006,Kentucky,UAB,Kentucky,UAB,East Regional,1
-2006,Washington,Utah State,Washington,Utah State,East Regional,1
-2006,Illinois,Air Force,Illinois,Air Force,East Regional,1
-2006,Michigan State,George Mason,George Mason,Michigan State,East Regional,1
-2006,North Carolina,Murray State,North Carolina,Murray State,East Regional,1
-2006,Wichita State,Seton Hall,Wichita State,Seton Hall,East Regional,1
-2006,Tennessee,Winthrop,Tennessee,Winthrop,East Regional,1
-2006,Connecticut,Kentucky,Connecticut,Kentucky,East Regional,2
-2006,Illinois,Washington,Washington,Illinois,East Regional,2
-2006,North Carolina,George Mason,George Mason,North Carolina,East Regional,2
-2006,Tennessee,Wichita State,Wichita State,Tennessee,East Regional,2
-2006,Connecticut,Washington,Connecticut,Washington,East Regional,3
-2006,Wichita State,George Mason,George Mason,Wichita State,East Regional,3
-2006,Connecticut,George Mason,George Mason,Connecticut,East Regional,4
-2006,Duke,Southern,Duke,Southern,South Regional,1
-2006,George Washington,UNC Wilmington,George Washington,UNC Wilmington,South Regional,1
-2006,Syracuse,Texas A&M,Texas A&M,Syracuse,South Regional,1
-2006,LSU,Iona,LSU,Iona,South Regional,1
-2006,West Virginia,Southern Illinois,West Virginia,Southern Illinois,South Regional,1
-2006,Iowa,Northwestern State,Northwestern State,Iowa,South Regional,1
-2006,California,NC State,NC State,California,South Regional,1
-2006,Texas,Pennsylvania ,Texas,Pennsylvania ,South Regional,1
-2006,Duke,George Washington,Duke,George Washington,South Regional,2
-2006,LSU,Texas A&M,LSU,Texas A&M,South Regional,2
-2006,West Virginia,Northwestern State,West Virginia,Northwestern State,South Regional,2
-2006,Texas,NC State,Texas,NC State,South Regional,2
-2006,Duke,LSU,LSU,Duke,South Regional,3
-2006,Texas,West Virginia,Texas,West Virginia,South Regional,3
-2006,Texas,LSU,LSU,Texas,South Regional,4
-2006,Florida,George Mason,Florida,George Mason,none,5
-2006,UCLA,LSU,UCLA,LSU,none,5
-2006,UCLA,Florida,Florida,UCLA,none,6
-Midwest Regional,East Regional,West Regional,South Regional
+year,team0,team1,region,round,winner
+2006,Monmouth,Hampton,none,0,0
+2006,Villanova,Monmouth,Midwest Regional,1,0
+2006,Arizona,Wisconsin,Midwest Regional,1,0
+2006,Nevada,Montana,Midwest Regional,1,1
+2006,Boston College,Pacific,Midwest Regional,1,0
+2006,Oklahoma,Milwaukee,Midwest Regional,1,1
+2006,Florida,South Alabama,Midwest Regional,1,0
+2006,Georgetown,Northern Iowa,Midwest Regional,1,0
+2006,Ohio State,Davidson,Midwest Regional,1,0
+2006,Villanova,Arizona,Midwest Regional,2,0
+2006,Boston College,Montana,Midwest Regional,2,0
+2006,Florida,Milwaukee,Midwest Regional,2,0
+2006,Ohio State,Georgetown,Midwest Regional,2,1
+2006,Villanova,Boston College,Midwest Regional,3,0
+2006,Florida,Georgetown,Midwest Regional,3,0
+2006,Villanova,Florida,Midwest Regional,4,1
+2006,Memphis,Oral Roberts,West Regional,1,0
+2006,Arkansas,Bucknell,West Regional,1,1
+2006,Pittsburgh,Kent State,West Regional,1,0
+2006,Kansas,Bradley,West Regional,1,1
+2006,Indiana,San Diego State,West Regional,1,0
+2006,Gonzaga,Xavier,West Regional,1,0
+2006,Marquette,Alabama,West Regional,1,1
+2006,UCLA,Belmont,West Regional,1,0
+2006,Memphis,Bucknell,West Regional,2,0
+2006,Pittsburgh,Bradley,West Regional,2,1
+2006,Gonzaga,Indiana,West Regional,2,0
+2006,UCLA,Alabama,West Regional,2,0
+2006,Memphis,Bradley,West Regional,3,0
+2006,UCLA,Gonzaga,West Regional,3,0
+2006,Memphis,UCLA,West Regional,4,1
+2006,Connecticut,Albany,East Regional,1,0
+2006,Kentucky,UAB,East Regional,1,0
+2006,Washington,Utah State,East Regional,1,0
+2006,Illinois,Air Force,East Regional,1,0
+2006,Michigan State,George Mason,East Regional,1,1
+2006,North Carolina,Murray State,East Regional,1,0
+2006,Wichita State,Seton Hall,East Regional,1,0
+2006,Tennessee,Winthrop,East Regional,1,0
+2006,Connecticut,Kentucky,East Regional,2,0
+2006,Illinois,Washington,East Regional,2,1
+2006,North Carolina,George Mason,East Regional,2,1
+2006,Tennessee,Wichita State,East Regional,2,1
+2006,Connecticut,Washington,East Regional,3,0
+2006,Wichita State,George Mason,East Regional,3,1
+2006,Connecticut,George Mason,East Regional,4,1
+2006,Duke,Southern,South Regional,1,0
+2006,George Washington,UNC Wilmington,South Regional,1,0
+2006,Syracuse,Texas A&M,South Regional,1,1
+2006,LSU,Iona,South Regional,1,0
+2006,West Virginia,Southern Illinois,South Regional,1,0
+2006,Iowa,Northwestern State,South Regional,1,1
+2006,California,NC State,South Regional,1,1
+2006,Texas,Pennsylvania ,South Regional,1,0
+2006,Duke,George Washington,South Regional,2,0
+2006,LSU,Texas A&M,South Regional,2,0
+2006,West Virginia,Northwestern State,South Regional,2,0
+2006,Texas,NC State,South Regional,2,0
+2006,Duke,LSU,South Regional,3,1
+2006,Texas,West Virginia,South Regional,3,0
+2006,Texas,LSU,South Regional,4,1
+2006,Florida,George Mason,none,5,0
+2006,UCLA,LSU,none,5,0
+2006,UCLA,Florida,none,6,1

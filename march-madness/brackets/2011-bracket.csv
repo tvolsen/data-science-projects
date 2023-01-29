@@ -1,69 +1,68 @@
-year,team0,team1,winner,loser,region,round
-2011,UNC Asheville,Little Rock,UNC Asheville,Little Rock,none,0
-2011,UAB,Clemson,Clemson,UAB,none,0
-2011,USC,VCU,VCU,USC,none,0
-2011,Alabama State,Texas-San Antonio,Texas-San Antonio,Alabama State,none,0
-2011,Ohio State,Texas-San Antonio,Ohio State,Texas-San Antonio,East Regional,1
-2011,George Mason,Villanova,George Mason,Villanova,East Regional,1
-2011,West Virginia,Clemson,West Virginia,Clemson,East Regional,1
-2011,Kentucky,Princeton,Kentucky,Princeton,East Regional,1
-2011,Syracuse,Indiana State,Syracuse,Indiana State,East Regional,1
-2011,Xavier,Marquette,Marquette,Xavier,East Regional,1
-2011,Washington,Georgia,Washington,Georgia,East Regional,1
-2011,North Carolina,Long Island,North Carolina,Long Island,East Regional,1
-2011,Ohio State,George Mason,Ohio State,George Mason,East Regional,2
-2011,Kentucky,West Virginia,Kentucky,West Virginia,East Regional,2
-2011,Syracuse,Marquette,Marquette,Syracuse,East Regional,2
-2011,North Carolina,Washington,North Carolina,Washington,East Regional,2
-2011,Ohio State,Kentucky,Kentucky,Ohio State,East Regional,3
-2011,North Carolina,Marquette,North Carolina,Marquette,East Regional,3
-2011,North Carolina,Kentucky,Kentucky,North Carolina,East Regional,4
-2011,Duke,Hampton,Duke,Hampton,West Regional,1
-2011,Michigan,Tennessee,Michigan,Tennessee,West Regional,1
-2011,Arizona,Memphis,Arizona,Memphis,West Regional,1
-2011,Texas,Oakland,Texas,Oakland,West Regional,1
-2011,Connecticut,Bucknell,Connecticut,Bucknell,West Regional,1
-2011,Cincinnati,Missouri,Cincinnati,Missouri,West Regional,1
-2011,Temple,Penn State,Temple,Penn State,West Regional,1
-2011,San Diego State,Northern Colorado,San Diego State,Northern Colorado,West Regional,1
-2011,Duke,Michigan,Duke,Michigan,West Regional,2
-2011,Texas,Arizona,Arizona,Texas,West Regional,2
-2011,Connecticut,Cincinnati,Connecticut,Cincinnati,West Regional,2
-2011,San Diego State,Temple,San Diego State,Temple,West Regional,2
-2011,Duke,Arizona,Arizona,Duke,West Regional,3
-2011,San Diego State,Connecticut,Connecticut,San Diego State,West Regional,3
-2011,Connecticut,Arizona,Connecticut,Arizona,West Regional,4
-2011,Kansas,Boston University,Kansas,Boston University,Southwest Regional,1
-2011,UNLV,Illinois,Illinois,UNLV,Southwest Regional,1
-2011,Vanderbilt,Richmond,Richmond,Vanderbilt,Southwest Regional,1
-2011,Louisville,Morehead State,Morehead State,Louisville,Southwest Regional,1
-2011,Purdue,Saint Peter's,Purdue,Saint Peter's,Southwest Regional,1
-2011,Georgetown,VCU,VCU,Georgetown,Southwest Regional,1
-2011,Texas A&M,Florida State,Florida State,Texas A&M,Southwest Regional,1
-2011,Notre Dame,Akron,Notre Dame,Akron,Southwest Regional,1
-2011,Kansas,Illinois,Kansas,Illinois,Southwest Regional,2
-2011,Richmond,Morehead State,Richmond,Morehead State,Southwest Regional,2
-2011,Purdue,VCU,VCU,Purdue,Southwest Regional,2
-2011,Notre Dame,Florida State,Florida State,Notre Dame,Southwest Regional,2
-2011,Kansas,Richmond,Kansas,Richmond,Southwest Regional,3
-2011,Florida State,VCU,VCU,Florida State,Southwest Regional,3
-2011,Kansas,VCU,VCU,Kansas,Southwest Regional,4
-2011,Pittsburgh,UNC Asheville,Pittsburgh,UNC Asheville,Southeast Regional,1
-2011,Butler,Old Dominion,Butler,Old Dominion,Southeast Regional,1
-2011,Kansas State,Utah State,Kansas State,Utah State,Southeast Regional,1
-2011,Wisconsin,Belmont,Wisconsin,Belmont,Southeast Regional,1
-2011,Brigham Young,Wofford,Brigham Young,Wofford,Southeast Regional,1
-2011,St. John's,Gonzaga,Gonzaga,St. John's,Southeast Regional,1
-2011,UCLA,Michigan State,UCLA,Michigan State,Southeast Regional,1
-2011,Florida,UC Santa Barbara,Florida,UC Santa Barbara,Southeast Regional,1
-2011,Pittsburgh,Butler,Butler,Pittsburgh,Southeast Regional,2
-2011,Wisconsin,Kansas State,Wisconsin,Kansas State,Southeast Regional,2
-2011,Brigham Young,Gonzaga,Brigham Young,Gonzaga,Southeast Regional,2
-2011,Florida,UCLA,Florida,UCLA,Southeast Regional,2
-2011,Wisconsin,Butler,Butler,Wisconsin,Southeast Regional,3
-2011,Florida,Brigham Young,Florida,Brigham Young,Southeast Regional,3
-2011,Florida,Butler,Butler,Florida,Southeast Regional,4
-2011,Kentucky,Connecticut,Connecticut,Kentucky,none,5
-2011,Butler,VCU,Butler,VCU,none,5
-2011,Connecticut,Butler,Connecticut,Butler,none,6
-East Regional,West Regional,Southeast Regional,Southwest Regional
+year,team0,team1,region,round,winner
+2011,UNC Asheville,Little Rock,none,0,0
+2011,UAB,Clemson,none,0,1
+2011,USC,VCU,none,0,1
+2011,Alabama State,Texas-San Antonio,none,0,1
+2011,Ohio State,Texas-San Antonio,East Regional,1,0
+2011,George Mason,Villanova,East Regional,1,0
+2011,West Virginia,Clemson,East Regional,1,0
+2011,Kentucky,Princeton,East Regional,1,0
+2011,Syracuse,Indiana State,East Regional,1,0
+2011,Xavier,Marquette,East Regional,1,1
+2011,Washington,Georgia,East Regional,1,0
+2011,North Carolina,Long Island,East Regional,1,0
+2011,Ohio State,George Mason,East Regional,2,0
+2011,Kentucky,West Virginia,East Regional,2,0
+2011,Syracuse,Marquette,East Regional,2,1
+2011,North Carolina,Washington,East Regional,2,0
+2011,Ohio State,Kentucky,East Regional,3,1
+2011,North Carolina,Marquette,East Regional,3,0
+2011,North Carolina,Kentucky,East Regional,4,1
+2011,Duke,Hampton,West Regional,1,0
+2011,Michigan,Tennessee,West Regional,1,0
+2011,Arizona,Memphis,West Regional,1,0
+2011,Texas,Oakland,West Regional,1,0
+2011,Connecticut,Bucknell,West Regional,1,0
+2011,Cincinnati,Missouri,West Regional,1,0
+2011,Temple,Penn State,West Regional,1,0
+2011,San Diego State,Northern Colorado,West Regional,1,0
+2011,Duke,Michigan,West Regional,2,0
+2011,Texas,Arizona,West Regional,2,1
+2011,Connecticut,Cincinnati,West Regional,2,0
+2011,San Diego State,Temple,West Regional,2,0
+2011,Duke,Arizona,West Regional,3,1
+2011,San Diego State,Connecticut,West Regional,3,1
+2011,Connecticut,Arizona,West Regional,4,0
+2011,Kansas,Boston University,Southwest Regional,1,0
+2011,UNLV,Illinois,Southwest Regional,1,1
+2011,Vanderbilt,Richmond,Southwest Regional,1,1
+2011,Louisville,Morehead State,Southwest Regional,1,1
+2011,Purdue,Saint Peter's,Southwest Regional,1,0
+2011,Georgetown,VCU,Southwest Regional,1,1
+2011,Texas A&M,Florida State,Southwest Regional,1,1
+2011,Notre Dame,Akron,Southwest Regional,1,0
+2011,Kansas,Illinois,Southwest Regional,2,0
+2011,Richmond,Morehead State,Southwest Regional,2,0
+2011,Purdue,VCU,Southwest Regional,2,1
+2011,Notre Dame,Florida State,Southwest Regional,2,1
+2011,Kansas,Richmond,Southwest Regional,3,0
+2011,Florida State,VCU,Southwest Regional,3,1
+2011,Kansas,VCU,Southwest Regional,4,1
+2011,Pittsburgh,UNC Asheville,Southeast Regional,1,0
+2011,Butler,Old Dominion,Southeast Regional,1,0
+2011,Kansas State,Utah State,Southeast Regional,1,0
+2011,Wisconsin,Belmont,Southeast Regional,1,0
+2011,Brigham Young,Wofford,Southeast Regional,1,0
+2011,St. John's,Gonzaga,Southeast Regional,1,1
+2011,UCLA,Michigan State,Southeast Regional,1,0
+2011,Florida,UC Santa Barbara,Southeast Regional,1,0
+2011,Pittsburgh,Butler,Southeast Regional,2,1
+2011,Wisconsin,Kansas State,Southeast Regional,2,0
+2011,Brigham Young,Gonzaga,Southeast Regional,2,0
+2011,Florida,UCLA,Southeast Regional,2,0
+2011,Wisconsin,Butler,Southeast Regional,3,1
+2011,Florida,Brigham Young,Southeast Regional,3,0
+2011,Florida,Butler,Southeast Regional,4,1
+2011,Kentucky,Connecticut,none,5,1
+2011,Butler,VCU,none,5,0
+2011,Connecticut,Butler,none,6,0

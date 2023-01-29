@@ -67,7 +67,6 @@ for year in range(2003, 2023):
     bracket = [y.text for y in bracket]
 
     results = []
-    region_matchup = []
 
     while bracket:
         # remove () from older brackets
@@ -87,37 +86,24 @@ for year in range(2003, 2023):
             team1_name = bracket.pop(0)
             team1_score = int(bracket.pop(0))
             if team0_score > team1_score:
-                results.append([year, team0_name, team1_name, team0_name, team1_name, region, round])
+                winner = 0
             else:
-                results.append([year, team0_name, team1_name, team1_name, team0_name, region, round])
+                winner = 1
+            results.append([year, team0_name, team1_name, region, round, winner])
 
             # tracks what region each team is in
             if team0_name not in team_region and region != "none":
                 team_region[team0_name] = region
             if team1_name not in team_region and region != "none":
                 team_region[team1_name] = region
-            # determines which regions face eachother in the final four
-            if round == 5:
-                region_matchup.append(team_region[team0_name])
-                region_matchup.append(team_region[team1_name])
-    # save all of the information to a csv file
-    with open(csv_file_path, "w") as f:
-        write = csv.writer(f)
-        # here are the column headers
-        categories = ["year", "team0", "team1", "winner", "loser", "region", "round"]
-        write.writerow(categories)
-        while results:
-            result = results.pop(0)
-            write.writerow(result)
-        write.writerow(region_matchup)
+
 
     # save all of the information to a csv file
     with open(csv_file_path, "w") as f:
         write = csv.writer(f)
         # here are the column headers
-        categories = ["year", "team0", "team1", "winner", "loser", "region", "round"]
+        categories = ["year", "team0", "team1", "region", "round", "winner"]
         write.writerow(categories)
         while results:
             result = results.pop(0)
             write.writerow(result)
-        write.writerow(region_matchup)
