@@ -3,6 +3,9 @@ import requests
 import os
 import csv
 
+if not os.path.isdir("stats"):
+    os.system(f"mkdir stats")
+
 for year in range(2003, 2023):
     # skip the two years most heavily impacted by COVID-19 for stat reliability
     if year == 2020 or year == 2021:

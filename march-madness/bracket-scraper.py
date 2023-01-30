@@ -3,6 +3,9 @@ import requests
 import os
 import csv
 
+if not os.path.isdir("brackets"):
+    os.system(f"mkdir brackets")
+
 # each bracket url has a different number at the end, since there is such a small number of brackets, I found manually copying them was the easiest option
 url_year = {
     2003 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2003/312",
@@ -25,9 +28,9 @@ url_year = {
     2022 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2022/1128"
 }
 
-for year in range(2003, 2023):
-    # skip the two years most heavily impacted by COVID-19 for stat reliability
-    if year == 2020 or year == 2021:
+for year in range(2005, 2006):
+    # skip the two years most heavily impacted by COVID-19 for stat reliability. For some reason 2005 is now missing data on the website, the github repo has the csv.
+    if year == 2020 or year == 2021 or year == 2005:
         continue
 
     # HTML and CSV file names and paths
@@ -67,7 +70,7 @@ for year in range(2003, 2023):
     bracket = [y.text for y in bracket]
 
     results = []
-
+    print(bracket)
     while bracket:
         # remove () from older brackets
         if "Region" in bracket[0] or "Final Four" in bracket[0]:

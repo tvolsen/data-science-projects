@@ -4,6 +4,9 @@ import os
 import csv
 from math import floor
 
+if not os.path.isdir("records"):
+    os.system(f"mkdir records")
+
 # each bracket url has a different number at the end, since there is such a small number of brackets, I found manually copying them was the easiest option
 url_year = {
     2003 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2003/312",
@@ -28,7 +31,7 @@ url_year = {
 
 curr_year = 2023
 
-for year in range(2003, curr_year + 1):
+for year in range(2003, curr_year):
     # skip the two years most heavily impacted by COVID-19 for stat reliability
     if year == 2020 or year == 2021:
         continue
