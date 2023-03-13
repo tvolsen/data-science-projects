@@ -25,10 +25,13 @@ url_year = {
     2017 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2017/803",
     2018 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2018/872",
     2019 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2019/936",
-    2022 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2022/1128"
+    2022 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2022/1128",
+    2023 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2023/1198"
 }
 
-for year in range(2005, 2006):
+curr_year = 2023
+
+for year in range(2023, 2024):
     # skip the two years most heavily impacted by COVID-19 for stat reliability. For some reason 2005 is now missing data on the website, the github repo has the csv.
     if year == 2020 or year == 2021 or year == 2005:
         continue
@@ -72,6 +75,8 @@ for year in range(2005, 2006):
     results = []
     print(bracket)
     while bracket:
+        if year == curr_year and bracket[0] == "Second Round":
+            break
         # remove () from older brackets
         if "Region" in bracket[0] or "Final Four" in bracket[0]:
             bracket[0] = bracket[0].split(" (")[0]

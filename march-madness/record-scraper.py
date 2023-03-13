@@ -26,12 +26,13 @@ url_year = {
     2017 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2017/803",
     2018 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2018/872",
     2019 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2019/936",
-    2022 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2022/1128"
+    2022 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2022/1128", 
+    2023 : "https://basketball.realgm.com/ncaa/tournaments/Post-Season/NCAA-Tournament/1/bracket/2023/1198"
 }
 
 curr_year = 2023
 
-for year in range(2003, curr_year):
+for year in range(curr_year, curr_year+1):
     # skip the two years most heavily impacted by COVID-19 for stat reliability
     if year == 2020 or year == 2021:
         continue

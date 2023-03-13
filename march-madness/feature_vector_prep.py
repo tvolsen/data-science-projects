@@ -23,7 +23,7 @@ def matchup_generator(all_stats, year, team0_name, team1_name, winner=None):
     team1_team0["year"] = year
     team1_team0["team0"] = team1_name
     team1_team0["team1"] = team0_name
-    if np.isnan(game.winner):
+    if not game.winner:
         team0_team1["result"] = np.nan
         team1_team0["result"] = np.nan
     else:
